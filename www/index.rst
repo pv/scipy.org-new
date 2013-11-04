@@ -192,5 +192,6 @@ SciPy 0.13.0 released :news-date:`2013-10-20`
    bug-report
    topical-software
    scipylib/index
+   cookbook/index
    scikits
    past-news

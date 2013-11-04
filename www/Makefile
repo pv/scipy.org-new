@@ -11,6 +11,8 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d _build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
+COOKBOOK_RST=$(patsubst %.py,%.rst,$(wildcard cookbook/*.py))
+
 .PHONY: help clean html linkcheck
 
 USERNAME=tkluyver
@@ -22,7 +24,7 @@ help:
 	@echo "  linkcheck              to check if external links work"
 
 clean:
-	-rm -rf _build/*
+	-rm -rf _build/* cookbook/*.rst cookbook/*.ipynb cookbook/*_files
 
 upload: html
 	# SSH must be correctly configured for this to work.
@@ -32,10 +34,13 @@ upload: html
 	    $(USERNAME)@new.scipy.org:/srv/scipy_org
 	ssh $(USERNAME)@new.scipy.org /srv/bin/fixperm-scipy_org.sh
 
-html:
+html: $(COOKBOOK_RST)
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) _build/html
 	@echo
 	@echo "Build finished. The HTML pages are in _build/html."
+
+cookbook/%.rst: cookbook/%.py
+	./cookbook.py
 
 linkcheck:
 	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) _build/linkcheck
