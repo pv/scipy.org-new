@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: bar charts
+# ======================================================================
+#
 # Use the bar function to make bar charts:
 # <http://matplotlib.sourceforge.net/matplotlib.pylab.html>\#-bar
 # 

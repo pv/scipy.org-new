@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: transformations
+# ======================================================================
+#
 # Whenever you pass coordinates to matplotlib, the question arises, what
 # kind of coordinates you mean. Consider the following example
 # 

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Kalman filtering
+# ======================================================================
+#
 # This is code implements the example given in pages 11-15 of [An
 # Introduction to the Kalman
 # Filter](http://www.cs.unc.edu/~welch/kalman/kalmanIntro.html) by Greg

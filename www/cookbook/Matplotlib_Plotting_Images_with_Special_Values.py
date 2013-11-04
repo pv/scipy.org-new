@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: plotting images with special values
+# ======================================================================
+#
 # Image plotting requires data, a colormap, and a normalization. A common
 # desire is to show missing data or other values in a specified color. The
 # following code shows an example of how to do this.

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib
+# ======================================================================
+#
 # The cookbook is a place for community contributions of recipes, howtos
 # and examples.
 # 
@@ -9,7 +12,7 @@
 # <BR> <TableOfContents>
 # 
 # Simple Plotting
-# ===============
+# ---------------
 # 
 # `* [:Cookbook/Matplotlib/SigmoidalFunctions:Sigmoidal Functions] - plotting simple functions`\
 # ` . `[`![](files/Matplotlib_attachments/sigmoids_small.png`](![](files/Matplotlib_attachments/sigmoids_small.png)\
@@ -43,7 +46,7 @@
 # ` . `[`![](files/Matplotlib_attachments/hinton-small.png`](![](files/Matplotlib_attachments/hinton-small.png)
 )# 
 # Pseudo Color Plots
-# ==================
+# ------------------
 # 
 # `* [:Cookbook/Matplotlib/Loading a colormap dynamically:Loading a colormap dynamically] - How to load a color map from a GMT (Generic Mapping Tools) file.`\
 # `* [:Cookbook/Matplotlib/Show colormaps:Show colormaps] - Small script to display all of the Matplotlib colormaps, and an exampleshowing how to create a new one.`\
@@ -54,14 +57,14 @@
 )# `* [:Cookbook/Matplotlib/ColormapTransformations:Transformations on Colormaps] - how to apply a function to the look up table of a colormap and turn it into another one.`
 # 
 # Typesetting
-# ===========
+# -----------
 # 
 # `* [:Cookbook/Matplotlib/UsingTex:Using TeX] - formatting matplotlib text with LaTeX`\
 # ` . `[`![](files/Matplotlib_attachments/tex_demo.png`](![](files/Matplotlib_attachments/tex_demo.png)\
 )# `* [:Cookbook/Matplotlib/LaTeX Examples:LaTeX Examples] - Complete examples for generating publication quality figures using LaTeX.`
 # 
 # 3D Plotting
-# ===========
+# -----------
 # 
 # ||**NOTE:** ***Experimental work has been going on to integrate 3D
 # plotting functionality into matplotlib***. Please see the related
@@ -79,7 +82,7 @@
 )# Integration] - How to import plots into VTK. . <![](files/Matplotlib_attachments/mpl_vtk.png>
 )# 
 # Embedding Plots in Apps
-# =======================
+# -----------------------
 # 
 # `* [:Cookbook/Matplotlib/EmbeddingInWx:Embedding in WX] - Advice on how to embed matplotlib figures in `[`wxPython`](http://www.wxpython.org)` applications.`\
 # `* `[`WxMpl`](http://agni.phys.iit.edu/~kmcivor/wxmpl)` - Python module for integrating matplotlib into wxPython GUIs.`\
@@ -90,7 +93,7 @@
 # `* ["Cookbook/Matplotlib/PySide"] - Demonstrates how to display a matplotlib plot embedded in a PySide (Qt) application`
 # 
 # Misc
-# ====
+# ----
 # 
 # `* [:Cookbook/Matplotlib/LoadImage:Load and display an image] - shows a simple way to import a PNG image to a numpy array`\
 # `* [:Cookbook/Matplotlib/Interactive Plotting:Interactive Plotting] - Adding mouse interaction to identify data annotations.`\

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# hdf5 in matlab
+# ======================================================================
+#
 # Python can save rich hierarchical datasets in hdf5 format. Matlab can
 # read hdf5, but the api is so heavy it is almost unusable. Here are some
 # matlab scripts (written by Gaël Varoquaux) to load and save data in hdf5

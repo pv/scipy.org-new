@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Histograms
+# ======================================================================
+#
 # Here is an example for creating a 2D histogram with variable bin size
 # and displaying it.
 # 

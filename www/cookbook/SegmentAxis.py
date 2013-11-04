@@ -15,7 +15,7 @@
 # of striding doesn't come for free; if you modify the array, all shared
 # elements will be modified. Nevertheless, it's a useful operation. Find
 # attached the code, <![](files/SegmentAxis_attachments/segmentaxis.py> . Example usage:
-)# 
+#
 # <codecell>
 
 

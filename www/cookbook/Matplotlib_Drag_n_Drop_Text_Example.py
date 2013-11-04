@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: drag'n'drop text example
+# ======================================================================
+#
 # introduction
 # ------------
 # 
@@ -10,8 +13,8 @@
 # 
 # This page gives an example of use of these facilities by adding a
 # Drag'n'Drop handler for text objects. You can get the source code for
-# this example here: <![](files/Matplotlib(2f)Drag_n_Drop_Text_Example_attachments/Text_DragnDrop_v0.1.py> .
-)# 
+# this example here: <![](files/Matplotlib(2f)Drag_n_Drop_Text_Example_attachments/Text_DragnDrop_v0.1.py> .)
+# 
 # Defining the handler class
 # --------------------------
 # 

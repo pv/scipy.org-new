@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Korteweg de Vries equation
+# ======================================================================
+#
 # This page shows how the [Korteweg-de Vries
 # equation](http://en.wikipedia.org/wiki/Korteweg-de_Vries_equation) can
 # be solved on a periodic domain using the [method of

@@ -1,7 +1,5 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from Cookbook/CompilingExtensionsOnWindows
-# 
 # Compiling Extension Modules on Windows using mingw
 # ==================================================
 # 

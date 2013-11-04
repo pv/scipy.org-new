@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
-# 
+# Input and output
+# ======================================================================
+#
 # Introduction
-# ============
+# ------------
 # 
 # This page gives examples how to read or write a !NumPy array to or from
 # a file, be it ascii or binary. The various methods demonstrated all have
@@ -18,10 +19,9 @@
 # various approaches presented.
 # 
 # Text files
-# ==========
+# ----------
 # 
-# SciPy
-# -----
+# ### SciPy
 # 
 # Writing files can be accomplished using \`savetxt\`. By far the easiest
 # way to read text data is via genfromtxt, (or derivative convenience
@@ -51,8 +51,7 @@ Matplotlib  provides an easy solution which seems to load data faster than read_
 
 # <markdowncell>
 
-# numPy
-# -----
+# ### numPy
 # 
 # <codecell>
 
@@ -71,8 +70,7 @@ Matplotlib  provides an easy solution which seems to load data faster than read_
 
 # <markdowncell>
 
-# csv files
-# ---------
+# ### csv files
 # 
 # Note that csv stands for "comma separated value". This means that the
 # separator (also called a delimiter), i.e. the character which is used to
@@ -81,8 +79,7 @@ Matplotlib  provides an easy solution which seems to load data faster than read_
 # option (see their respective help for details), which can be set to a
 # comma in order to read or write a csv file instead.
 # 
-# A more sophisticated example
-# ----------------------------
+# ### A more sophisticated example
 # 
 # Or, assuming you have imported numpy as N, you may want to read
 # arbitrary column types. You can also return a recarray, which let's you
@@ -119,7 +116,7 @@ myrecarray = read_array('file.csv', mydescr)
 # <markdowncell>
 
 # Binary Files
-# ============
+# ------------
 # 
 # The advantage of binary files is the huge reduction in file size. The
 # price paid is losing human readability, and in some formats, losing
@@ -127,8 +124,7 @@ myrecarray = read_array('file.csv', mydescr)
 # 
 # Let us consider the array in the previous example.
 # 
-# File format with metadata
-# -------------------------
+# ### File format with metadata
 # 
 # The simplest possibility is to use 's own binary file format. See , and
 # .
@@ -160,8 +156,7 @@ myrecarray = read_array('file.csv', mydescr)
 # On older systems, the standard was to use python's pickle module to
 # pickle the arrays.
 # 
-# Raw binary
-# ----------
+# ### Raw binary
 # 
 # These file formats simply write out the internal representation of the
 # arrays. This is platform-dependent and includes no information about
@@ -243,8 +238,7 @@ If you want that, use {{{numpy}}}'s own binary file format. See {{{numpy.save}}}
 
 # <markdowncell>
 
-# Write a Fortran or C array to a binary file with metadata
-# ---------------------------------------------------------
+# ### Write a Fortran or C array to a binary file with metadata
 # 
 # [libnpy](http://www.maths.unsw.edu.au/~mclean/libnpy-0.5.tgz) is a small
 # library that provides simple routines for saving a C or Fortran array to

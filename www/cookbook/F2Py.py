@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# F2py
+# ======================================================================
+#
 # This page provides examples on how to use the ["F2py"] fortran wrapping
 # program.
 # 
@@ -10,10 +13,9 @@
 # <TableOfContents>
 # 
 # Short examples
-# ==============
+# --------------
 # 
-# Wrapping a function from lapack
-# -------------------------------
+# ### Wrapping a function from lapack
 # 
 # *Taken from a message on 2006-06-22 to scipy-user by ArndBaecker*
 # 
@@ -70,8 +72,7 @@
 # 
 # Concrete (and very simple) example (non-lapack):
 # 
-# Wrapping Hermite polynomials
-# ----------------------------
+# ### Wrapping Hermite polynomials
 # 
 # Download code (found after hours of googling ;-) , from
 # <http://cdm.unimo.it/home/matematica/funaro.daniele/splib.txt>
@@ -121,14 +122,13 @@
 # <http://www.physik.tu-dresden.de/~baecker/comp_talks.html> under "Python
 # and Co - some recent developments".
 # 
-# Wrapping a simple C code
-# ------------------------
+# ### Wrapping a simple C code
 # 
 # f2py is also capable of handling C code. An example is found on the
 # wiki: ["Cookbook/f2py\_and\_NumPy"].
 # 
 # Step by step wrapping of a simple numerical code: Interactive System for Ice sheet Simulation
-# =============================================================================================
+# ---------------------------------------------------------------------------------------------
 # 
 # <http://websrv.cs.umt.edu/isis/index.php/F2py_example>
 # 

@@ -1,15 +1,12 @@
 # <markdowncell>
 
-# Table of Contents
-# =================
-# 
-# <TableOfContents>
-# 
+# SWIG memory deallocation
+# ========================
+#
 # Introduction
-# ============
+# ------------
 # 
-# Recipe description
-# ------------------
+# ### Recipe description
 # 
 # This cookbook recipe describes the automatic deallocation of memory
 # blocks allocated via \`malloc()\` calls in C, when the corresponding
@@ -31,16 +28,14 @@
 # managed fragments (ARRAY1, 2 and 3, FARRAY1, 2 and 3) were implemented,
 # and have now been extensively tested.
 # 
-# Where to get the files
-# ----------------------
+# ### Where to get the files
 # 
 # At the moment, the modified numpy.i file is available here (last updated
 # 2012-04-22): \*
 # <http://ezwidgets.googlecode.com/svn/trunk/numpy/numpy.i> \*
 # <http://ezwidgets.googlecode.com/svn/trunk/numpy/pyfragments.swg>
 # 
-# How the code came about
-# -----------------------
+# ### How the code came about
 # 
 # The original memory deallocation code was written by Travis Oliphant
 # (see <http://blog.enthought.com/?p=62> ) and as far as I know, these
@@ -52,10 +47,9 @@
 # post](http://blog.enthought.com/python/numpy/simplified-creation-of-numpy-arrays-from-pre-allocated-memory/).
 # 
 # How to use the new fragments
-# ============================
+# ----------------------------
 # 
-# Important steps
-# ---------------
+# ### Important steps
 # 
 # In yourfile.i, the %init function uses the same \`import\_array()\` call
 # you already know:
@@ -74,7 +68,7 @@
 # destroyed (see examples below).
 # 
 # A simple ARGOUTVIEWM\_ARRAY1 example
-# ====================================
+# ------------------------------------
 # 
 # The SWIG-wrapped function in C creates an N integers array, using
 # \`malloc()\` to allocate memory. From python, this function is
@@ -93,8 +87,7 @@
 # memory allocation fails, an exception is generated in C and caught in
 # Python, showing which iteration finally caused the allocation to fail.
 # 
-# The C source (ezalloc.c and ezalloc.h)
-# --------------------------------------
+# ### The C source (ezalloc.c and ezalloc.h)
 # 
 # Here is the
 # [ezalloc.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezalloc.h)
@@ -133,8 +126,7 @@ void alloc(int ni, int** veco, int *n)
 
 # <markdowncell>
 
-# The interface file (ezalloc.i)
-# ------------------------------
+# ### The interface file (ezalloc.i)
 # 
 # The file (available here:
 # [ezalloc.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezalloc.i))
@@ -214,8 +206,7 @@ void my_alloc2(int ni, int** veco2, int *n2)
 # [numpy.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/numpy.i) file
 # in the same directory for this to compile.
 # 
-# Setup file (setup\_alloc.py)
-# ----------------------------
+# ### Setup file (setup\_alloc.py)
 # 
 # This is the
 # [setup\_alloc.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_alloc.py)
@@ -257,8 +248,7 @@ setup(  name        = "alloc functions",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is (in Windows, using mingw):
 # 
@@ -278,8 +268,7 @@ $> python setup_alloc.py build
 
 # <markdowncell>
 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a
 # \`\_ezalloc.pyd\` file available in the \`build\\lib.XXX\` directory.
@@ -361,7 +350,7 @@ Step 483 failed
 # both in Windows XP and Linux.
 # 
 # A simple ARGOUTVIEWM\_ARRAY2 example
-# ====================================
+# ------------------------------------
 # 
 # The following examples shows how to return a two-dimensional array from
 # C which also benefits from the automatic memory deallocation.
@@ -372,8 +361,7 @@ Step 483 failed
 # the native numpy slicing \`array\_out = array\_in[d1\_0:d1\_1,
 # d2\_0:d2\_1]\`.
 # 
-# The C source (crop.c and crop.h)
-# --------------------------------
+# ### The C source (crop.c and crop.h)
 # 
 # Here is the
 # [crop.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/crop.h) file:
@@ -445,8 +433,7 @@ end:
 
 # <markdowncell>
 
-# The interface file (crop.i)
-# ---------------------------
+# ### The interface file (crop.i)
 # 
 # The file (available here:
 # [crop.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/crop.i)) does a
@@ -507,8 +494,7 @@ end:
 # [numpy.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/numpy.i) file
 # in the same directory for this to compile.
 # 
-# Setup file (setup\_crop.py)
-# ---------------------------
+# ### Setup file (setup\_crop.py)
 # 
 # This is the
 # [setup\_crop.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_crop.py)
@@ -550,8 +536,7 @@ setup(  name        = "crop test",
 
 # <markdowncell>
 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a \`\_crop.pyd\`
 # file available in the \`build\\lib.XXX\` directory. The file needs to be
@@ -623,7 +608,7 @@ native slicing:
 # thing left to take care of is the array orientation.
 # 
 # Conclusion and comments
-# =======================
+# -----------------------
 # 
 # That's all folks! Files are available on the [Google code
 # SVN](http://code.google.com/p/ezwidgets/source/browse/#svn/trunk/numpy).

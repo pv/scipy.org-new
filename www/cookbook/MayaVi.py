@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Mayavi
+# ======================================================================
+#
 # [Mayavi2](http://code.enthought.com/projects/mayavi/) is a interactive
 # program allowing elaborate 3D plots of scientific data in Python with
 # scipy. It is the successor of [MayaVi](http://mayavi.sf.net) for 3D
@@ -34,7 +37,7 @@ A mayavi2 session.
 # <markdowncell>
 
 # MayaVi2 topics
-# ==============
+# --------------
 # 
 # !MayaVi2 can be used as an interactive program or not, as it will be
 # presented here.

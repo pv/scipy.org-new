@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Watershed
+# =========
+#
 # The watershed algorithm (see
 # [1](http://en.wikipedia.org/wiki/Watershed_(algorithm))) is used to
 # split an image into distinct components.

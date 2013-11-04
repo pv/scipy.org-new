@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Filtfilt
+# ======================================================================
+#
 # This sample code demonstrates the use of the function
 # scipy.signal.filtfilt, a linear filter that achieves zero phase delay by
 # applying an [IIR
@@ -16,7 +19,7 @@
 # long transients near the initial value of the signal.
 # 
 # Code
-# ====
+# ----
 # 
 # <codecell>
 
@@ -71,7 +74,7 @@ show()
 # <markdowncell>
 
 # Figure
-# ======
+# ------
 # 
 # ![](files/FiltFilt_attachments/filfilt2.jpg
 # 

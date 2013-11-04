@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: deleting an existing data series
+# ======================================================================
+#
 # Each axes instance contains a lines attribute, which is a list of the
 # data series in the plot, added in chronological order. To delete a
 # particular data series, one must simply delete the appropriate element

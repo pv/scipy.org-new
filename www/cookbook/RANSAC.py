@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# RANSAC
+# ============
+#
 # The attached file ( <![](files/RANSAC_attachments/ransac.py> ) implements the [RANSAC
 )# algorithm](http://en.wikipedia.org/wiki/RANSAC). An example image:
 # 

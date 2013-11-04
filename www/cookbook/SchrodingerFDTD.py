@@ -1,9 +1,9 @@
 # <markdowncell>
 
-# The One-Dimensional Finite-Difference Time-Domain (FDTD) Algorithm Applied to the Schrödinger Equation
-# ======================================================================================================
+# FDTD Algorithm Applied to the Schrödinger Equation
+# ==================================================
 # 
-# The code below illustrates the use of the FDTD algorithm to solve the
+# The code below illustrates the use of the The One-Dimensional Finite-Difference Time-Domain (FDTD) algorithm to solve the
 # one-dimensional Schrödinger equation for simple potentials. It only
 # requires Numpy and Matplotlib.
 # 

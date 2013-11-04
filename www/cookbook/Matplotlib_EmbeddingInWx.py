@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: embedding in wx
+# ======================================================================
+#
 # Matplotlib can be embedded in wxPython applications to provide high
 # quality data visualization. There are two approaches to this, direct
 # embedding and using an embedding library.
@@ -28,7 +31,7 @@
 # meets your needs.
 # 
 # Learning the Object-Oriented API
-# ================================
+# --------------------------------
 # 
 # If you're embedding matplotlib in a wxPython program, you're probably
 # going to have to use Matplotlib's Object-Oriented API to at some point.
@@ -50,7 +53,7 @@
 # to display these plots.
 # 
 # A Simple Application
-# ====================
+# --------------------
 # 
 # Here is a simple example of an application written in wx that embeds a
 # ["Matplotlib figure in a wx panel"]. No toolbars, mouse clicks or any of

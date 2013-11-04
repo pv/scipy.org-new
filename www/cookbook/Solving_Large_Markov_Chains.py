@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Solving large Markov Chains
+# ===========================
+#
 # This page shows how to compute the stationary distribution pi of a large
 # Markov chain. The example is a tandem of two M/M/1 queues. Generally the
 # transition matrix P of the Markov chain is sparse, so that we can either

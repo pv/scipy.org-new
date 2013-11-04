@@ -23,7 +23,7 @@
 # representing the header and the footer.
 # 
 # Reading FORTRAN "unformatted IO" files
-# ======================================
+# --------------------------------------
 # 
 # Lots of scientific code is written in FORTRAN. One of the most
 # convenient file formats to create in FORTRAN is the so-called

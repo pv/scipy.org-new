@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from vtkVolumeRendering
+# Vtk volume rendering
+# ====================
 # 
 # As I had some problems in figuring out how to use VTK to render data
 # contained in a three dimensional numpy array, I have decided to share my

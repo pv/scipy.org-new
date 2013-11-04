@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Linear regression
+# ======================================================================
+#
 # Linear Regression Example
 # 
 # <codecell>

@@ -1,7 +1,8 @@
 # <markdowncell>
 
-# <TableOfContents>
-# 
+# Mayavi: examples
+# ======================================================================
+#
 # ||\<\#80FF80\> This page presents scripting Mayavi2 using the advanced,
 # object-oriented API. Mayavi2 has recently acquired an easy-to-use,
 # thought maybe not as powerful, scripting module: mlab. You are invited
@@ -10,7 +11,7 @@
 # [Mayavi2 user guide](http://enthought.github.com/mayavi/mayavi). ||
 # 
 # Introduction
-# ============
+# ------------
 # 
 # Here, you will be presented some examples of rendering scenes you can
 # get with !MayaVi2. You are advised to read
@@ -22,7 +23,7 @@
 # <http://enthought.github.com/mayavi/mayavi/auto/examples.html>. ||
 # 
 # Example using IsoSurface Module (contour.py)
-# ============================================
+# --------------------------------------------
 # 
 # <codecell>
 
@@ -114,7 +115,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/contour.png
 # 
 # Example using Glyph Module (glyph.py)
-# =====================================
+# -------------------------------------
 # 
 # <codecell>
 
@@ -185,7 +186,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/glyph.png
 # 
 # Example without Mayavi2 UI (nongui.py)
-# ======================================
+# --------------------------------------
 # 
 # <codecell>
 
@@ -307,7 +308,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/nongui.png
 # 
 # Example with a 3D array as numerical source (numeric\_source.py)
-# ================================================================
+# ----------------------------------------------------------------
 # 
 # <codecell>
 
@@ -376,7 +377,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/numeric_source.png
 # 
 # Example using Streamline Module (streamline.py)
-# ===============================================
+# -----------------------------------------------
 # 
 # <codecell>
 
@@ -441,7 +442,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/streamline.png
 # 
 # Example using ImagePlaneWidget Module (test.py)
-# ===============================================
+# -----------------------------------------------
 # 
 # <codecell>
 
@@ -550,7 +551,7 @@ if __name__ == '__main__':
 # ![](files/MayaVi(2f)examples_attachments/test.png
 # 
 # Example using mlab (surf\_regular\_mlab.py)
-# ===========================================
+# -------------------------------------------
 # 
 # See also [:Cookbook/MayaVi/Surf] for another way of doing this.
 # 

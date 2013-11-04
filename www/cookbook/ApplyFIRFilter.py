@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# 1.  format wiki
+# Applying a FIR filter
+# ======================================================================
 # 
 # How to apply a FIR filter: convolve, fftconvolve, convolve1d or lfilter?
 # ------------------------------------------------------------------------

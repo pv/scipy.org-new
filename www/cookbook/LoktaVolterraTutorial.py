@@ -1,5 +1,9 @@
 # <markdowncell>
 
+# ======================================================================
+# Matplotlib: lotka volterra tutorial
+# ======================================================================
+#
 # 1.  1.  page was renamed from LoktaVolterraTutorial
 # 
 # This example describes how to integrate ODEs with the scipy.integrate
@@ -7,8 +11,8 @@
 # direction fields and other information.
 # 
 # You can get the source code for this tutorial here:
-# <![](files/LoktaVolterraTutorial_attachments/tutorial_lokta-voltera_v4.py> .
-)# 
+# <![](files/LoktaVolterraTutorial_attachments/tutorial_lokta-voltera_v4.py> .)
+# 
 # Presentation of the Lotka-Volterra Model
 # ----------------------------------------
 # 

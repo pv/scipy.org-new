@@ -1,13 +1,15 @@
 # <markdowncell>
 
+# Matplotlib: latex examples
+# ======================================================================
+#
 # Producing Graphs for Publication using LaTeX
-# ============================================
+# --------------------------------------------
 # 
 # This page describes several ways to produce publication quality graphics
 # with LaTeX.
 # 
-# LaTeX UsingTex
-# --------------
+# ### LaTeX UsingTex
 # 
 # This section describes a technique following the
 # ["Cookbook/Matplotlib/UsingTex"] guidelines.
@@ -164,14 +166,12 @@ pylab.savefig('fig1.eps')
 
 # <![](files/Matplotlib(2f)LaTeX_Examples_attachments/fig.png>
 )# 
-# producing gray scale dashed plots
-# ---------------------------------
+# ### producing gray scale dashed plots
 # 
 # `An obvious solution is to greyscale convert your figure, but for readibility, adding dashes is often better.. This maybe implemented for an example of a SigmoidalFunctions with `
-# [`![](files/Matplotlib(2f)LaTeX_Examples_attachments/naka-rushton.png`](![](files/Matplotlib(2f)LaTeX_Examples_attachments/naka-rushton.png)
-)# 
-# LaTeX using psfrag
-# ------------------
+# [`![](files/Matplotlib(2f)LaTeX_Examples_attachments/naka-rushton.png`](![](files/Matplotlib(2f)LaTeX_Examples_attachments/naka-rushton.png))
+# 
+# ### LaTeX using psfrag
 # 
 # **Note: This section is obsolete.** Recent versions matplotlib break the
 # psfrag functionality (see for example [this
@@ -272,10 +272,9 @@ pylab.savefig('fig2.eps')
 
 # <markdowncell>
 
-# <![](files/Matplotlib(2f)LaTeX_Examples_attachments/psfrag_example.png>
-)# 
-# Odds and Ends
-# -------------
+# <![](files/Matplotlib(2f)LaTeX_Examples_attachments/psfrag_example.png>)
+#
+# ### Odds and Ends
 # 
 # Another way to set the legend fonts after the legend has been drawn is
 # to use, for example:

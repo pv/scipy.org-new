@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Scripting Mayavi 2: filters
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # Well, until now, examples above are quite simple: scalars or vectors
 # data are presented in the "vaccum", i.e. there is not object or material
@@ -15,7 +16,7 @@
 # The first filter you will be presented here deals with this problem.
 # 
 # ExtractUnstructuredGrid filter
-# ==============================
+# ------------------------------
 # 
 # For this example, we suppose several hypotheses:
 # 
@@ -128,7 +129,7 @@ eug3.filter.cell_maximum = 342880
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)Filters_attachments/filter_eug2.png
 # 
 # ExtractGrid filter
-# ==================
+# ------------------
 # 
 # Using !ExtractGrid filter is easier, because it works (only) on
 # structured grids: you only have to set min/max values for x, y, z
@@ -177,7 +178,7 @@ s.module_manager.scalar_lut_manager.data_range = [0, 1]
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)Filters_attachments/filter_eg.png
 # 
 # Threshold filter
-# ================
+# ----------------
 # 
 # Using this filter, you can consider scalars values contained in a
 # specific range.
@@ -238,7 +239,7 @@ isosurf.module_manager.scalar_lut_manager.data_range = [0, 1]
 # to 0.4 & 0.6).
 # 
 # PointToCellData filter
-# ======================
+# ----------------------
 # 
 # Generally, data are interpolated between each point. Thus, they look
 # like nicer.
@@ -285,14 +286,14 @@ scp.module_manager.scalar_lut_manager.data_range = [0, 1]
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)Filters_attachments/filter_p2c.png
 # 
 # WarpScalar filter
-# =================
+# -----------------
 # 
 # You can use the !WarpScalar filter to warp a 2D surface for example. See
 # [:Cookbook/MayaVi/Examples: Example using mlab
 # (surf\_regular\_mlab.py)].
 # 
 # TransformData filter
-# ====================
+# --------------------
 # 
 # * * * * *
 # 

@@ -1,13 +1,10 @@
 # <markdowncell>
 
-# 1.  format wiki
-# 2.  language fr
-# 
-# `(!) see also [:Cookbook/Matplotlib/LoadImage] to load a PNG image`
-# 
 # Python Imaging Library
 # ----------------------
-# 
+#
+# `(!) see also [:Cookbook/Matplotlib/LoadImage] to load a PNG image`
+#
 # Apply this patch to make PIL Image objects both export and consume the
 # array interface (from Travis Oliphant):
 # 

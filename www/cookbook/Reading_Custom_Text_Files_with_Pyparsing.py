@@ -1,14 +1,15 @@
 # <markdowncell>
 
-# <TableOfContents(2)>
+# Reading custom text files with Pyparsing
+# ========================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # In this cookbook, we will focus on using
 # [pyparsing](http://pyparsing.wikispaces.com/) and numpy to read a
-# structured text file like this one, [data.txt](![](files/Reading_Custom_Text_Files_with_Pyparsing_attachments/data3.txt):
-)# 
+# structured text file like this one, [data.txt](![](files/Reading_Custom_Text_Files_with_Pyparsing_attachments/data3.txt):)
+# 
 # <codecell>
 
 
@@ -113,7 +114,7 @@ array([ 18.8,  16.9,  20.8])
 # `* `*`unit_`*` : a dict containing the unit corresponding to each variable name, if there is any`
 # 
 # Defining a parser for parameter declarations
-# ============================================
+# --------------------------------------------
 # 
 # [pyparsing](http://pyparsing.wikispaces.com/) is an efficient tool to
 # deal with formatted text, and let you process in two steps:
@@ -128,8 +129,7 @@ array([ 18.8,  16.9,  20.8])
 # So, we will define a parser for each one and combine them to define the
 # final parser.
 # 
-# First steps with pyparsing
-# --------------------------
+# ### First steps with pyparsing
 # 
 # This section will describe step by step how to build the function
 # \`paramParser\` defined in
@@ -216,8 +216,7 @@ paramDef = keyName('name') + Optional(unitDef)('unit') + Suppress("="+empty) + p
 
 # <markdowncell>
 
-# Converting data into Python objects
-# -----------------------------------
+# ### Converting data into Python objects
 # 
 # We will detail further what kind of values are expected to let pyparsing
 # handle the conversion.
@@ -325,8 +324,7 @@ pyValue     = MatchFirst( e.setWhitespaceChars(' \t\r') for e in pyValue_list)
 
 # <markdowncell>
 
-# Some words on whitespace characters
-# -----------------------------------
+# ### Some words on whitespace characters
 # 
 # By default, pyparsing considers any characters in ' \\t\\r\\n') as
 # whitespace and meaningless. If you need to detect ends-of-line you need
@@ -353,8 +351,7 @@ pyValue     = MatchFirst( e.setWhitespaceChars(' \t\r') for e in pyValue_list)
 
 # <markdowncell>
 
-# Converting variables names
-# --------------------------
+# ### Converting variables names
 # 
 # We must also detail what is an acceptable parameter name.
 # 
@@ -390,8 +387,7 @@ keyNameWithoutSpace = variableParser('_-./').setParseAction(downcaseTokens)
 # \`downcaseTokens\` is a special pyparsing function returning every
 # matching tokens lowercase.
 # 
-# Dealing with raw text
-# ---------------------
+# ### Dealing with raw text
 # 
 # To finish this parser, we now need to add a rule to match raw text
 # following the conditions:
@@ -423,8 +419,7 @@ paramDef = keyName('name') + Optional(unitDef)('unit') + Suppress("="+empty) + v
 
 # <markdowncell>
 
-# Structuring data
-# ----------------
+# ### Structuring data
 # 
 # We will try to organize the results in an easy to use data structure.
 # 
@@ -494,7 +489,7 @@ Out[12]: (25361.150000000001, 'mm')
 # <markdowncell>
 
 # Defining a parser for tables
-# ============================
+# ----------------------------
 # 
 # For parsing parameter declarations, we have seen most of the common
 # techniques but one: the use of \`Forward\` element to define parsing
@@ -525,8 +520,7 @@ Out[12]: (25361.150000000001, 'mm')
 # The heart of the problem is to tell pyparsing that each line should have
 # the same number of columns, whereas this number is unknown a priori.
 # 
-# Using the Forward element
-# -------------------------
+# ### Using the Forward element
 # 
 # We will get round this problem by defining the pattern corresponding to
 # the unit line and its followers right after reading the header line.
@@ -564,8 +558,7 @@ tableColDef = (   firstLine('header').setParseAction(defineColNumber)
 
 # <markdowncell>
 
-# Structuring our data
-# --------------------
+# ### Structuring our data
 # 
 # Now will organize our data the same way we did for parameters, but we
 # will use this time the name of the column as the key and we will
@@ -621,7 +614,7 @@ tableColParser = Dict(tableColDef.setParseAction(formatBloc))
 # <markdowncell>
 
 # Building the final parser
-# =========================
+# -------------------------
 # 
 # We have now three kinds of parsers:
 # 

@@ -1,15 +1,17 @@
 # <markdowncell>
 
+# Fitting data
+# ======================================================================
+#
 # This page shows you how to fit experimental data and plots the results
 # using matplotlib.
 # 
 # <TableOfContents>
 # 
 # Fit examples with sinusoidal functions
-# ======================================
+# --------------------------------------
 # 
-# Generating the data
-# -------------------
+# ### Generating the data
 # 
 # Using real data is much more fun, but, just so that you can reproduce
 # this example I will generate data to fit
@@ -33,8 +35,7 @@ tY = -32.14*cos(2*pi/0.8*Ty-1.94) + 0.15*Ty+7*((0.5-rand(num_points))*exp(2*rand
 
 # <markdowncell>
 
-# Fitting the data
-# ----------------
+# ### Fitting the data
 # 
 # We now have two sets of data: Tx and Ty, the time series, and tX and tY,
 # sinusoidal data with noise. We are interested in finding the frequency
@@ -80,8 +81,7 @@ show()
 
 # ![](files/FittingData_attachments/datafit.png
 # 
-# A clever use of the cost function
-# ---------------------------------
+# ### A clever use of the cost function
 # 
 # Suppose that you have the same data set: two time-series of oscillating
 # phenomena, but that you know that the frequency of the two oscillations
@@ -138,7 +138,7 @@ show()
 # <markdowncell>
 
 # Simplifying the syntax
-# ======================
+# ----------------------
 # 
 # Especially when using fits for interactive use, the standard syntax for
 # optimize.leastsq can get really long. Using the following script can
@@ -193,10 +193,9 @@ fit(f, [mu, sigma, height], data)
 # <markdowncell>
 
 # Fitting gaussian-shaped data
-# ============================
+# ----------------------------
 # 
-# Calculating the moments of the distribution
-# -------------------------------------------
+# ### Calculating the moments of the distribution
 # 
 # Fitting gaussian-shaped data does not require an optimization routine.
 # Just calculating the moments of the distribution is enough, and this is
@@ -232,8 +231,7 @@ show()
 
 # ![](files/FittingData_attachments/gaussianfit.png
 # 
-# Fitting a 2D gaussian
-# ---------------------
+# ### Fitting a 2D gaussian
 # 
 # Here is robust code to fit a 2D gaussian. It calculates the moments of
 # the data to guess the initial parameters for an optimization routine.
@@ -315,10 +313,9 @@ show()
 # ![](files/FittingData_attachments/fitgaussian.png
 # 
 # Fitting a power-law to data with errors
-# =======================================
+# ---------------------------------------
 # 
-# Generating the data
-# -------------------
+# ### Generating the data
 # 
 # Generate some data with noise to demonstrate the fitting procedure. Data
 # is generated with an amplitude of 10 and a power-law index of -2.0.
@@ -348,8 +345,7 @@ ydata += randn(num_points) * yerr       # simulated noisy data
 
 # <markdowncell>
 
-# Fitting the data
-# ----------------
+# ### Fitting the data
 # 
 # If your data is well-behaved, you can fit a power-law function by first
 # converting to a linear equation by using the logarithm. Then use the

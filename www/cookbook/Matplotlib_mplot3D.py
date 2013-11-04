@@ -1,7 +1,8 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from Cookbook/mplot3D
-# 
+# Matplotlib: mplot3d
+# ======================================================================
+#
 # The examples below show simple 3D plots using matplotlib. matplotlib's
 # 3D capabilities were added by incorporating John Porter's mplot3d
 # module, thus no additional download is required any more, the following

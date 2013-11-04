@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: compiling matplotlib on solaris10
+# ======================================================================
+#
 # [how to install
 # sunstudio](http://blogs.sun.com/migi/entry/opensolaris_howto_install_sun_studio)
 # and [build matplotlib on solaris

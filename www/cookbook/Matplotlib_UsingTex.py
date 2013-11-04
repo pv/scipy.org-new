@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: using tex
+# ======================================================================
+#
 # Matplotlib can use LaTeX to handle the text layout in your figures. This
 # option (which is still somewhat experimental) can be activated by
 # setting text.usetex : true in your rc settings. Text handling with
@@ -109,7 +112,7 @@ show()
 # Adobe Illustrator, or searched for once converted to pdf.
 # 
 # Possible Hangups
-# ================
+# ----------------
 # 
 # ` * On Windows, the PATH environment variable may need to be modified to find the latex, dvipng and ghostscript executables. This is done by going to the control panel, selecting the "system" icon, selecting the "advanced" tab, and clicking the "environment variables" button (and people think Linux is complicated. Sheesh.) Select the PATH variable, and add the appropriate directories.`
 # 
@@ -122,7 +125,7 @@ show()
 # ` * Some progress has been made so Matplotlib uses the dvi files directly for text layout. This allows latex to be used for text layout with the pdf and svg backends, as well as the *Agg and PS backends. In the future, a latex installation may be the only external dependency. `
 # 
 # In the event that things dont work
-# ==================================
+# ----------------------------------
 # 
 # ``  * Try `rm -r ~/.matplotlib/*cache` ``
 # 

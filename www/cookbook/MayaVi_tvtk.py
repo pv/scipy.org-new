@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Mayavi tvtk
+# ===========
+#
 # ||\<\#80FF80\> This page is not the main source of documentation. You
 # are invited to refer to the [Mayavi2 home
 # page](http://enthought.github.com/mayavi/mayavi) for up-to-date

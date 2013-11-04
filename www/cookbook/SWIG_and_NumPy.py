@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# SWIG and Numpy
+# ==============
+#
 # Please note that with current versions of NumPy (SVN), the directory
 # contains a complete working example with simple SWIG typemaps, including
 # also a proper file so you can install it with the standard Python

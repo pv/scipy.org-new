@@ -1,20 +1,20 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Mayavi tips
+# ===========
 # 
 # Introduction
-# ============
+# ------------
 # 
 # Here are general tips on how best to use !MayaVi2.
 # 
 # Scripting MayaVi2 effectively
-# =============================
+# -----------------------------
 # 
 # Here are a few tips showing how to script mayavi2 interactively and
 # effectively.
 # 
-# Drag and drop object
-# --------------------
+# ### Drag and drop object
 # 
 # Running the contour.py python script example, you should get:
 # 
@@ -34,8 +34,7 @@
 # Now, you can use your object following two ways: typing directly in the
 # python shell or using the explore() method.
 # 
-# Typing in the python shell
-# --------------------------
+# ### Typing in the python shell
 # 
 # You can create an instance of your object in the python shell window.
 # 
@@ -53,8 +52,7 @@
 # know how they depends from each other. An easier way is using the
 # explore() method.
 # 
-# Using the explore() method
-# --------------------------
+# ### Using the explore() method
 # 
 # Simply type
 # 
@@ -91,8 +89,7 @@ explore(foobar)
 # 
 # You can also work in the pyhon shell, create your objects and so on...
 # 
-# Working in the python shell
-# ---------------------------
+# ### Working in the python shell
 # 
 # On the embedded Python shell in the !MayaVi2 application, the name
 # 'mayavi' is bound to the !MayaVi scripting interface which can be used
@@ -165,7 +162,7 @@ engine = m.script.engine
 # template.
 # 
 # Save snapshots
-# ==============
+# --------------
 # 
 # Saving snapshots within a python script is very easy:
 # 
@@ -201,7 +198,7 @@ s.scene.save('test.jpg', size=(width,height))
 # `* once finished, and all your snapshots have been created, don't forget to kill the X virtual framebuffer and reset your display to its previous value. If not, you won't be able to see your movie ;-)`
 # 
 # Enabling alpha transparency in the colormap
-# ===========================================
+# -------------------------------------------
 # 
 # Drag the module manager to the python shell and you will be able to
 # enable alpha transparency in the colormap via:
@@ -214,7 +211,7 @@ dragged.scalar_lut_manager.lut.alpha_range=(0,1)
 # <markdowncell>
 
 # Set MayaVi2 session colors
-# ==========================
+# --------------------------
 # 
 # Run !MayaVi2, go to "Tools" menu then "Preferences" then "TVTK Scene".
 # 
@@ -234,7 +231,7 @@ dragged.scalar_lut_manager.lut.alpha_range=(0,1)
 # you'll get these colors each time you run a !MayaVi2 session.
 # 
 # Writing VTK data files using TVTK
-# =================================
+# ---------------------------------
 # 
 # Coming soon...
 # 

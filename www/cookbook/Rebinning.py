@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Rebinning
+# =========
+#
 # Examples showing how to rebin data to produce a smaller or bigger array
 # without (and with) using interpolation.
 # 

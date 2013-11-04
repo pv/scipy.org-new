@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Mayabi: mlab
+# ======================================================================
+#
 # ||\<\#80FF80\> This page is about the tvtk.tools.mlab module. You are
 # strongly advised to use the more recent [mayavi.mlab
 # module](http://enthought.github.com/mayavi/mayavi/mlab.html) which can
@@ -23,7 +26,7 @@
 # <TableOfContents>
 # 
 # A Simple Example
-# ================
+# ----------------
 # 
 # ||\<\#FF8080\> **Important:** All these examples must be run in "ipython
 # -wthread" or in a Wx application (like pycrust, or the Mayavi2
@@ -54,7 +57,7 @@ fig.add(s)
 # ![](files/MayaVi(2f)mlab_attachments/simple_example.png
 # 
 # Changing axis and colour
-# ========================
+# ------------------------
 # 
 # <codecell>
 
@@ -90,7 +93,7 @@ t.edit_traits()
 # ![](files/MayaVi(2f)mlab_attachments/tvtk.mlab_example.png
 # 
 # List of different functionalities
-# =================================
+# ---------------------------------
 # 
 # The implementation provided here is object oriented and each
 # visualization capability is implemented as a class that has traits. So

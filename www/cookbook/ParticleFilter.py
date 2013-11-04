@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Particle filter
+# ===============
+#
 # A basic particle filter tracking algorithm, using a uniformly
 # distributed step as motion model, and the initial target colour as
 # determinant feature for the weighting function. This requires an

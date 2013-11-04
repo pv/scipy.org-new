@@ -1,7 +1,7 @@
 # <markdowncell>
 
 # OLS
-# ---
+# ===
 # 
 # OLS is an abbreviation for ordinary least squares.
 # 

@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Matplotlib: multiline plots
+# ======================================================================
 # 
 # Multiple line plots
-# ===================
+# -------------------
 # 
 # Often one wants to plot many signals over one another. There are a few
 # ways to do this. The naive implementation is just to add a constant
@@ -37,7 +38,7 @@ show()
 # signal to remain in place and the gain of the signal to be changed.
 # 
 # Using multiple axes
-# ===================
+# -------------------
 # 
 # If you have just a few signals, you could make each signal a separate
 # axes and make the y label horizontal. This works fine for a small number
@@ -100,7 +101,7 @@ show()
 # ![](files/Matplotlib(2f)MultilinePlots_attachments/multipleaxes.png
 # 
 # Manipulating transforms
-# =======================
+# -----------------------
 # 
 # For large numbers of lines the approach above is inefficient because
 # creating a separate axes for each line creates a lot of useless

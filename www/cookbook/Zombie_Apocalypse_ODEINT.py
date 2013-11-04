@@ -1,7 +1,7 @@
 # <markdowncell>
 
 # Modeling a Zombie Apocalypse
-# ----------------------------
+# ============================
 # 
 # This example demonstrates how to solve a system of first order ODEs
 # using SciPy. Note that a Nth order equation can also be solved using

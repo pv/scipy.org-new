@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: converting a matrix to a raster image
+# ======================================================================
+#
 # Scipy provides a command (imsave) to make a raster (png, jpg...) image
 # from a 2D array, each pixel corresponding to one value of the array. Yet
 # the image is black and white.

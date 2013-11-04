@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from Cookbook/Pyrex And NumPy
+# Pyrex And NumPy
+# ===============
 # 
 # Please note that the code described here is slightly out of date, since
 # today [cython](http://cython.org) is the actively maintained version of

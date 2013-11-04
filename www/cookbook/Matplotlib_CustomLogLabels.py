@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: custom log labels
+# ======================================================================
+#
 # Example of how to replace the default log-plot exponential labels with
 # integer labels. The same method will work for any kind of custom
 # labeling. This example was pulled from the Python-list mailing list and

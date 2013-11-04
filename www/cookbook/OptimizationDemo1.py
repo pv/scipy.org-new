@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Optimization demo
+# =================
+#
 # SciPy's optimization package is scipy.optimize. The most basic
 # non-linear optimization functions are: \*optimize.fmin(func, x0), which
 # finds the minimum of f(x) starting x with x0 (x can be a vector)

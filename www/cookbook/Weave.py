@@ -1,7 +1,7 @@
 # <markdowncell>
 
 # Inline Weave With Basic Array Conversion (no Blitz)
-# ---------------------------------------------------
+# ===================================================
 # 
 # Python and Numpy are designed to express general statements that work
 # transparently on many sizes of incoming data. Using inline Weave with

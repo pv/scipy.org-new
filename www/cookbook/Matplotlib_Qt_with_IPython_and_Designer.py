@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: qt with ipython and designer
+# ======================================================================
+#
 # Example code for embedding Matplotlib in Qt applications is given at
 # [embedding\_in\_qt.py](http://cvs.sourceforge.net/viewcvs.py/matplotlib/matplotlib/examples/).
 # This recipe extends that basic formula for integration with other

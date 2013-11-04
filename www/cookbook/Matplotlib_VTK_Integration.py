@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib VTK integration
+# ======================================================================
+#
 # Just in case you would ever like to incorporate matplotlib plots into
 # your vtk application, vtk provides a really easy way to import them.
 # 
@@ -92,7 +95,7 @@ bbact.SetMapper(hmap)
 # <markdowncell>
 
 # Comments
-# ========
+# --------
 # 
 # <codecell>
 

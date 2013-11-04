@@ -1,8 +1,8 @@
 # <markdowncell>
 
-# Cookbook/Matplotlib/Legend
-# ==========================
-# 
+# Matplotlib: legend
+# ======================================================================
+#
 # Legends for overlaid lines and markers
 # --------------------------------------
 # 

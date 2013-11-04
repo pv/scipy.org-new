@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: colormap transformations
+# ======================================================================
+#
 # Operating on color vectors
-# ==========================
+# --------------------------
 # 
 # Ever wanted to reverse a colormap, or to desaturate one ? Here is a
 # routine to apply a function to the look up table of a colormap:
@@ -58,7 +61,7 @@ imshow(y, cmap=light_jet)
 # ![](files/Matplotlib(2f)ColormapTransformations_attachments/jet.png
 # 
 # Operating on indices
-# ====================
+# --------------------
 # 
 # OK, but what if you want to change the indices of a colormap, but not
 # its colors.
@@ -84,7 +87,7 @@ def cmap_xmap(function,cmap):
 # <markdowncell>
 
 # Discrete colormap
-# =================
+# -----------------
 # 
 # Here is how you can discretize a continuous colormap.
 # 

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: plotting values with masked arrays
+# ======================================================================
+#
 # From time to time one might end up with "meaningless" data in an array.
 # Be it because a detector didn't work properly or for an other reason. Or
 # one has to deal with data in completely different ranges. In both cases

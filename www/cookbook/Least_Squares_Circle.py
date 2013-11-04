@@ -1,6 +1,8 @@
 # <markdowncell>
 
-# <TableOfContents(3)>
+# Least squares circle
+# ======================================================================
+#
 # 
 # Introduction
 # ------------

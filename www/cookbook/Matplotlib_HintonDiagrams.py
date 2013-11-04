@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: hint on diagrams
+# ======================================================================
+#
 # Hinton diagrams with matplotlib
-# ===============================
+# -------------------------------
 # 
 # Hinton diagrams are a way of visualizing numerical values in a
 # matrix/vector, popular in the neural networks and machine learning

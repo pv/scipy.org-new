@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Multidot
+# =========
+#
 # The matrix multiplication function, numpy.dot(), only takes two
 # arguments. That means to multiply more than two arrays together you end
 # up with nested function calls which are hard to read:

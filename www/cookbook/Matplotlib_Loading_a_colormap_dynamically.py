@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: loading a colormap dynamically
+# ======================================================================
+#
 # In a
 # [thread](http://thread.gmane.org/gmane.comp.python.matplotlib.general/1536)
 # on the matplotlib mailling list, James Boyle posted a way to load

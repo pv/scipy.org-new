@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Spherical Bessel Zeros
+# ======================
+#
 # It may be useful to find out the zeros of the spherical Bessel
 # functions, for instance, if you want to compute the eigenfrequencies of
 # a spherical electromagnetic cavity (in this case, you'll need also the

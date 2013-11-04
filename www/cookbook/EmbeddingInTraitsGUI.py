@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from EmbeddingInTraitsGUI
-# 
+# Embedding in Traits GUI
+# ======================================================================
+#
 # Embedding a Matplotlib Figure in a Traits App
-# =============================================
+# ---------------------------------------------
 # 
 # Traits, part of the[Enthought Tools Suit](http://code.enthought.com/),
 # provides a great framework for creating GUI Apps without a lot of the

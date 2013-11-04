@@ -1,12 +1,10 @@
 # <markdowncell>
 
-# Table of Contents
-# =================
-# 
-# <TableOfContents>
-# 
+# SWIG Numpy examples
+# ===================
+#
 # Introduction
-# ============
+# ------------
 # 
 # These are simple !NumPy and SWIG examples which use the numpy.i
 # interface file. There is also a MinGW section for people who may want to
@@ -30,10 +28,9 @@ svn co http://scipy.org/svn/numpy/trunk numpy
 # ` * These two files (and others) are also available in the numpy source tarball: `[`4`](http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103)
 # 
 # Initial setup
-# =============
+# -------------
 # 
-# gcc and SWIG
-# ------------
+# ### gcc and SWIG
 # 
 # Check that both gcc and SWIG are available (paths known):
 # 
@@ -55,8 +52,7 @@ gcc -v
 
 # Both should output some text...
 # 
-# Modifying the pyfragments.swg file (MinGW only)
-# -----------------------------------------------
+# ### Modifying the pyfragments.swg file (MinGW only)
 # 
 # This is from my own tests, running SWIG Version 1.3.36 and gcc version
 # 3.4.5 (mingw-vista special r3). I had to remove the 'static' statements
@@ -65,8 +61,7 @@ gcc -v
 # is my modified version:
 # [pyfragments.swg](http://ezwidgets.googlecode.com/svn/trunk/numpy/pyfragments.swg)
 # 
-# Compilation and testing
-# -----------------------
+# ### Compilation and testing
 # 
 # A setup.py file specific to each module must be written first. I based
 # mine on the reference setup.py available in
@@ -98,7 +93,7 @@ python setup.py build --compiler=mingw32
 # and on a Win32 machine, the \`build\\lib.win32-2.5\` directory).
 # 
 # A simple ARGOUT\_ARRAY1 example
-# ===============================
+# -------------------------------
 # 
 # This is a re-implementation of the range function. The module is called
 # ezrange. One thing to remember with \`ARGOUT\_ARRAY1\` is that the
@@ -117,8 +112,7 @@ python setup.py build --compiler=mingw32
 # allocated in C, see the example given in [:Cookbook/SWIG Memory
 # Deallocation].
 # 
-# The C source (ezrange.c and ezrange.h)
-# --------------------------------------
+# ### The C source (ezrange.c and ezrange.h)
 # 
 # Here is the
 # [ezrange.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezrange.h)
@@ -148,8 +142,7 @@ void range(int *rangevec, int n)
 
 # <markdowncell>
 
-# The interface file (ezrange.i)
-# ------------------------------
+# ### The interface file (ezrange.i)
 # 
 # Here is the
 # [ezrange.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezrange.i)
@@ -181,8 +174,7 @@ void range(int *rangevec, int n)
 # [numpy.i](http://scipy.org/svn/numpy/trunk/doc/swig/numpy.i) file in the
 # same directory.
 # 
-# Setup file (setup.py)
-# ---------------------
+# ### Setup file (setup.py)
 # 
 # This is my
 # [setup.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_range.py)
@@ -222,8 +214,7 @@ setup(  name        = "range function",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is:
 # 
@@ -245,8 +236,7 @@ python setup.py build --compiler=mingw32
 
 # depending on your environment.
 # 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a
 # \`\_ezrange.pyd\` file available in the \`build\\lib.XXX\` directory.
@@ -264,14 +254,13 @@ array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 # <markdowncell>
 
 # A simple INPLACE\_ARRAY1 example
-# ================================
+# --------------------------------
 # 
 # This example doubles the elements of the 1-D array passed to it. The
 # operation is done in-place, which means that the array passed to the
 # function is changed.
 # 
-# The C source (inplace.c and inplace.h)
-# --------------------------------------
+# ### The C source (inplace.c and inplace.h)
 # 
 # Here is the
 # [inplace.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/inplace.h)
@@ -303,8 +292,7 @@ void inplace(double *invec, int n)
 
 # <markdowncell>
 
-# The interface file (inplace.i)
-# ------------------------------
+# ### The interface file (inplace.i)
 # 
 # Here is the
 # [inplace.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/inplace.i)
@@ -331,8 +319,7 @@ void inplace(double *invec, int n)
 
 # <markdowncell>
 
-# Setup file (setup.py)
-# ---------------------
+# ### Setup file (setup.py)
 # 
 # This is my
 # [setup.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_inplace.py)
@@ -373,8 +360,7 @@ setup(  name        = "inplace function",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is:
 # 
@@ -396,8 +382,7 @@ python setup.py build --compiler=mingw32
 
 # depending on your environment.
 # 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a
 # \`\_inplace.pyd\` file available in the \`build\\lib.XXX\` directory.
@@ -418,10 +403,9 @@ array([2., 4., 6.])
 # <markdowncell>
 
 # A simple ARGOUTVIEW\_ARRAY1 example
-# ===================================
+# -----------------------------------
 # 
-# Big fat multiple warnings
-# -------------------------
+# ### Big fat multiple warnings
 # 
 # Please note, Bill Spotz advises against the use of argout\_view arrays,
 # unless absolutely necessary:
@@ -452,8 +436,7 @@ array([2., 4., 6.])
 # ezview.finalize() takes care of the memory deallocation (this is the
 # weak part of this example).
 # 
-# The C source (ezview.c and ezview.h)
-# ------------------------------------
+# ### The C source (ezview.c and ezview.h)
 # 
 # Here is the
 # [ezview.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezview.h)
@@ -491,8 +474,7 @@ void set_ones(double *array, int n)
 
 # <markdowncell>
 
-# The interface file (ezview.i)
-# -----------------------------
+# ### The interface file (ezview.i)
 # 
 # Here is the
 # [ezview.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezview.i)
@@ -558,8 +540,7 @@ void my_set_ones(double **vec, int* n) {
 # Don't forget that you will also need the numpy.i file in the same
 # directory.
 # 
-# Setup file (setup.py)
-# ---------------------
+# ### Setup file (setup.py)
 # 
 # This is my
 # [setup.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_ezview.py)
@@ -599,8 +580,7 @@ setup(  name        = "ezview module",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is:
 # 
@@ -622,8 +602,7 @@ python setup.py build --compiler=mingw32
 
 # depending on your environment.
 # 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a \`\_ezview.pyd\`
 # file available in the \`build\\lib.XXX\` directory. You will need to
@@ -693,7 +672,7 @@ __call_at_end...
 # <markdowncell>
 
 # Error handling using errno and python exceptions
-# ================================================
+# ------------------------------------------------
 # 
 # I have been testing this for a few months now and this is the best I've
 # come-up with. If anyone knows of a better way, please let me know.
@@ -708,8 +687,7 @@ __call_at_end...
 # when checking whether an array index is valid. Second example uses errno
 # to notify the user of a malloc() problem.
 # 
-# The C source (ezerr.c and ezerr.h)
-# ----------------------------------
+# ### The C source (ezerr.c and ezerr.h)
 # 
 # Here is the
 # [ezerr.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezerr.h) file:
@@ -771,8 +749,7 @@ end:
 
 # <markdowncell>
 
-# The interface file (ezerr.i)
-# ----------------------------
+# ### The interface file (ezerr.i)
 # 
 # Here is the
 # [ezerr.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/ezerr.i)
@@ -829,8 +806,7 @@ end:
 # Don't forget that you will also need the numpy.i file in the same
 # directory.
 # 
-# Setup file (setup.py)
-# ---------------------
+# ### Setup file (setup.py)
 # 
 # This is my
 # [setup.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_err.py)
@@ -872,8 +848,7 @@ setup(  name        = "err test",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is:
 # 
@@ -895,8 +870,7 @@ python setup.py build --compiler=mingw32
 
 # depending on your environment.
 # 
-# Testing the module
-# ------------------
+# ### Testing the module
 # 
 # If everything goes according to plan, there should be a \`\_ezerr.pyd\`
 # file available in the \`build\\lib.XXX\` directory. You will need to
@@ -973,13 +947,12 @@ MemoryError: Failed malloc()
 # <markdowncell>
 
 # Dot product example (from Bill Spotz's article)
-# ===============================================
+# -----------------------------------------------
 # 
 # The last example given in Bill Spotz's artice is for a dot product
 # function. Here is a fleshed-out version.
 # 
-# The C source (dot.c and dot.h)
-# ------------------------------
+# ### The C source (dot.c and dot.h)
 # 
 # Here is the
 # [dot.h](http://ezwidgets.googlecode.com/svn/trunk/numpy/dot.h) file:
@@ -1014,8 +987,7 @@ double dot(int len, double* vec1, double* vec2)
 
 # <markdowncell>
 
-# The interface files (dot.i and numpy.i)
-# ---------------------------------------
+# ### The interface files (dot.i and numpy.i)
 # 
 # Here is the complete
 # [dot.i](http://ezwidgets.googlecode.com/svn/trunk/numpy/dot.i) file:
@@ -1054,8 +1026,7 @@ double dot(int len, double* vec1, double* vec2)
 
 # <markdowncell>
 
-# Setup file (setup.py)
-# ---------------------
+# ### Setup file (setup.py)
 # 
 # This is the
 # [setup.py](http://ezwidgets.googlecode.com/svn/trunk/numpy/setup_dot.py)
@@ -1095,8 +1066,7 @@ setup(  name        = "Dot product",
 
 # <markdowncell>
 
-# Compiling the module
-# --------------------
+# ### Compiling the module
 # 
 # The setup command-line is:
 # 
@@ -1118,8 +1088,7 @@ python setup.py build --compiler=mingw32
 
 # depending on your environment.
 # 
-# Testing
-# -------
+# ### Testing
 # 
 # If everything goes according to plan, there should be a \`\_dot.pyd\`
 # file available in the \`build\\lib.XXX\` directory. You will need to
@@ -1136,7 +1105,7 @@ python setup.py build --compiler=mingw32
 # <markdowncell>
 
 # Conclusion
-# ==========
+# ----------
 # 
 # That's all folks (for now)! As usual, comments welcome!
 # 

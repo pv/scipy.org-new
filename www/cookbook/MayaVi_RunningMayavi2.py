@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Mayavi: running mayavi 2
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # !MayaVi2 works with two kinds of "objects": modules and filters.
 # 
@@ -20,7 +21,7 @@
 # `* run !MayaVi2 with some options on the command line, thus loading directly the modules and/or the filters you want to use.`
 # 
 # Run MayaVi2 as is
-# =================
+# -----------------
 # 
 # Note: It is supposed here, in order to work, that your PATH variable
 # contains the directory where !MayaVi2 binary is installed (for instance,
@@ -62,7 +63,7 @@ mayavi2
 # ![](files/MayaVi(2f)RunningMayavi2_attachments/mv2.png
 # 
 # Run MayaVi2 with some parameters: modules and filters available
-# ===============================================================
+# ---------------------------------------------------------------
 # 
 # In order to know what you can set as parameters on the command line,
 # type
@@ -188,7 +189,7 @@ mayavi2 -d data/heart.vtk -m Outline -m GridPlane -m GridPlane -m GridPlane -m C
 # So now, let's play with this GUI ;-)
 # 
 # Moving around
-# =============
+# -------------
 # 
 # So, you can see on these two figures the render window on the right
 # (TVTK Scene) beside the modules tree on the left. Let's consider the

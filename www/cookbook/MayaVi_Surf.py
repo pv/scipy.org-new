@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Mayavi surf
+# ===========
+#
 # If you want to plot a surface representing a matrix by elevation and
 # colour of its points you have to transform the matrix data in a 3D data
 # that !MayaVi2 can understand. [:Cookbook/MayaVi/mlab:mlab] knows how to

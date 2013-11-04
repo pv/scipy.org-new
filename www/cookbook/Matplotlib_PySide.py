@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: pyside
+# ======================================================================
+#
 # This is a very basic example showing how to display a matplotlib plot
 # within a Qt application using PySide. In case of problems try to change
 # the rcParam entry “backend.qt4” to "PySide" (e.g. by in the matplotlibrc

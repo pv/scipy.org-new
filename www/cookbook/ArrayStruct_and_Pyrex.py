@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Array, struct, and Pyrex
+# ======================================================================
+# 
 # Overview
-# ========
+# --------
 # 
 # [Pyrex](http://nz.cosc.canterbury.ac.nz/~greg/python/Pyrex/) is a
 # language for writing C extensions to Python. Its syntax is very similar
@@ -18,7 +21,7 @@
 # `* numarray (>=1.5.0)`
 # 
 # Sharing data malloced by a Pyrex-based extension
-# ================================================
+# ------------------------------------------------
 # 
 # Here is a Pyrex file which shows how to export its data using the array
 # interface. This allows various Python types to have a view of the data

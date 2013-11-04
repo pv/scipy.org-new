@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: scrolling plot
+# ======================================================================
+#
 # Controlling an Embedded Plot with wx Scrollbars
-# ===============================================
+# -----------------------------------------------
 # 
 # When plotting a very long sequence in a matplotlib canvas embedded in a
 # wxPython application, it sometimes is useful to be able to display a

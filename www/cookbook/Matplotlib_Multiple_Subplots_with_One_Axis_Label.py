@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: multiple subplots with one axis label
+# ======================================================================
+#
 # Using a single axis label to annotate multiple subplot axes
-# ===========================================================
+# -----------------------------------------------------------
 # 
 # When using multiple subplots with the same axis units, it is redundant
 # to label each axis individually, and makes the graph overly complex. You

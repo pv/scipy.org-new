@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# **Recipies and FAQ for the Timeseries Scikit**
+# Recipes for timeseries
+# ======================
 # 
 # <TableOfContents(4)>
 # 

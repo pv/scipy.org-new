@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: multicolored line
+# ======================================================================
+#
 # Defining colors manually
-# ========================
+# ------------------------
 # 
 # <![](files/Matplotlib(2f)MulticoloredLine_attachments/colored_line.py> is a simple illustration of how to make the
 )# color of each segment of a line depend on some property of the data
@@ -61,7 +64,7 @@ plt.show()
 # contiguous region of a given color.
 # 
 # Using a smooth, builtin colormap
-# ================================
+# --------------------------------
 # 
 # If you have a parametric curve to display, and want to represent the
 # parameter using color.

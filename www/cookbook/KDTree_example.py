@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# KDTree example
+# ======================================================================
+#
 # **'Note: there is an implementation of a kdtree in scipy:
 # <http://docs.scipy.org/scipy/docs/scipy.spatial.kdtree.KDTree/> It is
 # recommended to use that instead of the below.**'

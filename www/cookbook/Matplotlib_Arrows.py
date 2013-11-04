@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: arrows
+# ======================================================================
+#
 # Some example code for how to plot an arrow using the Arrow function.
 # 
 # <codecell>

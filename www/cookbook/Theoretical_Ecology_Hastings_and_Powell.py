@@ -1,13 +1,16 @@
 # <markdowncell>
 
+# Theoretical ecology: Hastings and Powell
+# ========================================
+#
 # Overview
-# ========
+# --------
 # 
 # A simple script that recreates the min/max bifurcation diagrams from
 # Hastings and Powell 1991.
 # 
 # Library Functions
-# =================
+# -----------------
 # 
 # Two useful functions are defined in the module bif.py.
 # 
@@ -48,7 +51,7 @@ def min_max(data, tol=1e-14):
 # <markdowncell>
 
 # The Model
-# =========
+# ---------
 # 
 # For speed the model is defined in a fortran file and compiled into a
 # library for use from python. Using this method gives a 100 fold increase

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Optimization and fit demo
+# =========================
+#
 # This is a quick example of creating data from several [Bessel
 # functions](http://docs.scipy.org/doc/scipy/reference/special.html) and
 # finding local maxima, then fitting a curve using some spline functions

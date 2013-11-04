@@ -1,7 +1,5 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from RadialBasisFunctions
-# 
 # Using radial basis functions for smoothing/interpolation
 # ========================================================
 # 

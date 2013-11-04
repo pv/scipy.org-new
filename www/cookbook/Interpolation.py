@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
-# 
+# Interpolation
+# ======================================================================
+#
 # Using B-splines in scipy.signal
-# ===============================
+# -------------------------------
 # 
 # Example showing how to use B-splines in scipy.signal to do
 # interpolation. The input points must be equally spaced to use these
@@ -30,7 +31,7 @@ show()
 # ![](files/Interpolation_attachments/interpolate_figure1.png
 # 
 # N-D interpolation for equally-spaced data
-# =========================================
+# -----------------------------------------
 # 
 # The scipy.ndimage package also contains spline\_filter and
 # map\_coordinates which can be used to perform N-dimensional
@@ -70,7 +71,7 @@ newf = ndimage.map_coordinates(coeffs, coords, prefilter=False)
 # ![](files/Interpolation_attachments/interpolate_figure2.png
 # 
 # Interpolation of an N-D curve
-# =============================
+# -----------------------------
 # 
 # The scipy.interpolate packages wraps the netlib FITPACK routines
 # (Dierckx) for calculating smoothing splines for various kinds of data

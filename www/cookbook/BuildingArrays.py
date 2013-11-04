@@ -1,11 +1,14 @@
 # <markdowncell>
 
+# Building arrays
+# ======================================================================
+# 
 # This is a brief introduction to array objects, their declaration and use
 # in scipy. A comprehensive list of examples of Numpy functions for arrays
 # can be found at ["Numpy Example List With Doc"]
 # 
 # Basics
-# ======
+# ------
 # 
 # Numerical arrays are not yet defined in the standard python language. To
 # load the array object and its methods into the namespace, the numpy
@@ -214,7 +217,7 @@ array([[4, 5],
 # <markdowncell>
 
 # Matrix dot product
-# ==================
+# ------------------
 # 
 # The next example creates two matrices: a and b, and computes the dot
 # product axb (in other words, the standard matrix product)
@@ -230,7 +233,7 @@ array([[4, 5],
 # <markdowncell>
 
 # Automatic array creation
-# ========================
+# ------------------------
 # 
 # Scipy (via Numpy) provides numerous ways to create arrays automatically.
 # For example, to create a vector of evenly spaced numbers, the linspace
@@ -318,7 +321,7 @@ mz = zeros((2,2), dtype=float)
 # <markdowncell>
 
 # Repeating array segments
-# ========================
+# ------------------------
 # 
 # The ndarray.repeat() method returns a new array with dimensions repeated
 # from the old one.

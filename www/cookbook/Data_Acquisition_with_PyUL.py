@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Data acquisition with PyUL
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # This pages illustrates the use of the inexpensive (about \$150) [PMD
 # USB-1208FS](http://www.measurementcomputing.com/cbicatalog/cbiproduct_new.asp?dept_id=412&pf_id=1665&mscssid=G9PDTGJV5VES9P694WLRS3JWG3J615M7)
@@ -24,7 +25,7 @@
 # 12:20), which is what was used to run these examples.
 # 
 # Example 1 - Simple Analog input
-# ===============================
+# -------------------------------
 # 
 # The first example illustrates the use of the unbuffered analog input:
 # 
@@ -64,7 +65,7 @@ pylab.show()
 # ![](files/Data_Acquisition_with_PyUL_attachments/example1.png
 # 
 # Example 2 - Getting Volts rather than arbitrary units
-# =====================================================
+# -----------------------------------------------------
 # 
 # The values recorded in example 1 are "ADC units", the values recorded
 # directly by the Analog-to-Digital hardware. In fact, this device has a
@@ -109,7 +110,7 @@ pylab.show()
 # ![](files/Data_Acquisition_with_PyUL_attachments/example2.png
 # 
 # Example 3 - Buffered input
-# ==========================
+# --------------------------
 # 
 # As you have no doubt noticed, the plots above aren't very "pure" sine
 # waves. This is undoubtedly due to the way we're sampling the data.
@@ -158,7 +159,7 @@ pylab.show()
 # The) output looks much better: ![](files/Data_Acquisition_with_PyUL_attachments/example3.png
 # 
 # Example 4 - computing the power spectrum
-# ========================================
+# ----------------------------------------
 # 
 # Now we can use the function from pylab (part of matplotlib) to compute
 # the power spectral density.

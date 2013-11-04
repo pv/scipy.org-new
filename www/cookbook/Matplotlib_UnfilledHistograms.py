@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: unfilled histograms
+# ======================================================================
+#
 # Here's some template code for plotting histograms that don't look like
 # bar charts, but instead have only outlines (like IDL creates).
 # 

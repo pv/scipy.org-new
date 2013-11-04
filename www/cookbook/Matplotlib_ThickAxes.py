@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: thick axes
+# ======================================================================
+#
 # Example of how to thicken the lines around your plot (axes lines) and to
 # get big bold fonts on the tick and axis labels.
 # 

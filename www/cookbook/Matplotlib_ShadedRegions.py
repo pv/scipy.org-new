@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: shaded regions
+# ======================================================================
+#
 # Use the fill function to make shaded regions of any color tint. Here is
 # an example.
 # 

@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# Matplotlib: interactive plotting
+# ======================================================================
+#
 # Interactive point identification
-# ================================
+# --------------------------------
 # 
 # I find it often quite useful to be able to identify points within a plot
 # simply by clicking. This recipe provides a fairly simple

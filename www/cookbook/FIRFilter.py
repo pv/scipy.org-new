@@ -1,6 +1,8 @@
 # <markdowncell>
 
-# 1.  format wiki
+# FIR filter
+# ======================================================================
+#
 # 
 # This cookbook example shows how to design and use a low-pass FIR filter
 # using functions from scipy.signal.

@@ -1,7 +1,7 @@
 # <markdowncell>
 
 # Brownian Motion
-# ---------------
+# ===============
 # 
 # *Brownian motion* is a stochastic process. One form of the equation for
 # Brownian motion is

@@ -1,7 +1,8 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from TreeMap
-# 
+# Matplotlib: treemap
+# ======================================================================
+#
 # Treemaps are a nice way of showing tree information not based on a
 # connected node approach.
 # 

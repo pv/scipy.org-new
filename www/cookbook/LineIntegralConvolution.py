@@ -14,8 +14,8 @@
 # field and its sign. With a minor modification the same technique can be
 # used to produce an animation of "flow" along the vector field.
 # 
-# <![](files/LineIntegralConvolution_attachments/flow-image.png>
-)# 
+# <![](files/LineIntegralConvolution_attachments/flow-image.png>)
+# 
 # Attached to this page is cython code to implement a simple line integral
 # convolution operator, plus some demonstration python code. The demo code
 # can either make more or less the image above - a simple array of
@@ -25,11 +25,11 @@
 # video is a little awkward to work with, since all the standard video
 # compression techniques butcher it horribly, but it does work well.
 # 
-# <![](files/LineIntegralConvolution_attachments/lic_internal.pyx>
-)# 
-# <![](files/LineIntegralConvolution_attachments/lic.py>
-)# 
-# <![](files/LineIntegralConvolution_attachments/lic_demo.py>
-)# 
-# <![](files/LineIntegralConvolution_attachments/setup.py>
-)# 
+# <![](files/LineIntegralConvolution_attachments/lic_internal.pyx>)
+# 
+# <![](files/LineIntegralConvolution_attachments/lic.py>)
+# 
+# <![](files/LineIntegralConvolution_attachments/lic_demo.py>)
+# 
+# <![](files/LineIntegralConvolution_attachments/setup.py>)
+# 

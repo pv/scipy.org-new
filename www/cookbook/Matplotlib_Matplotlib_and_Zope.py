@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: matplotlib and zope
+# ======================================================================
+#
 # `0. Prerequisites: You need to have the following installed to successfully run this example: Zope, Matplotlib (on top of Zope's Python), Python Image Library (PIL). And one more thing - probably every body does this right, but just in case - zope instance home directory has to be writable, for following to work.`
 # 
 # `1. Create a file (e.g. mpl.py) in INSTANCEHOME\Extensions:`

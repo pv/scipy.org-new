@@ -1,12 +1,12 @@
 # <markdowncell>
 
 # Eye Diagram
-# -----------
-# 
+# ======================================================================
+#
 # The code below generates the following plot:
 # 
-# <![](files/EyeDiagram_attachments/eye-diagram3.png>
-)# 
+# <![](files/EyeDiagram_attachments/eye-diagram3.png>)
+# 
 # The main script generates \`num\_traces\` traces, and on a grid of
 # 600x600, it counts the number times a trace crosses a grid point. The
 # grid is then plotted using matplotlib's imshow() function. The counting

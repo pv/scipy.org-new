@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: loadimage
+# ======================================================================
+#
 # Image processing often works on gray scale images that were stored as
 # PNG files. How do we import / export that file into ?
 # 

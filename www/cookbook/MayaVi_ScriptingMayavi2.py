@@ -1,8 +1,7 @@
 # <markdowncell>
 
-# 1.  1.  page was renamed from Cookbook/MayaVi/UsingMayavi2
-# 
-# <TableOfContents>
+# Scripting Mayavi 2
+# ==================
 # 
 # ||\<\#80FF80\> This page presents scripting Mayavi2 using the advanced,
 # object-oriented API. Mayavi2 has recently acquired an easy-to-use,
@@ -15,7 +14,7 @@
 # works, and it complements the user guide. ||
 # 
 # Introduction
-# ============
+# ------------
 # 
 # To script !MayaVi2, you need (at least):
 # 
@@ -39,7 +38,7 @@
 # written in python.
 # 
 # Main template: create your MayaVi2 class
-# ========================================
+# ----------------------------------------
 # 
 # A !MayaVi2 script should contain at least the following few lines:
 # 
@@ -110,7 +109,7 @@ script.add_filter(myfilter)
 # filters you want to use, you have to load some data, of course.
 # 
 # Loading data
-# ============
+# ------------
 # 
 # You have the choice between:
 # 
@@ -118,8 +117,7 @@ script.add_filter(myfilter)
 # 
 # `* load a data file with !FileReader methods.`
 # 
-# Loading data from array using ArraySource method
-# ------------------------------------------------
+# ### Loading data from array using ArraySource method
 # 
 # For example, we will create a 50\*50\*50 3D (scalar) array of a product
 # of cosinus & sinus functions.
@@ -161,8 +159,7 @@ src.scalar_data = Hv_scal # load scalars data
 
 # <markdowncell>
 
-# Loading data from file using FileReader methods
-# -----------------------------------------------
+# ### Loading data from file using FileReader methods
 # 
 # To load a VTK data file, say heart.vtk file in mayavi/examples/data/
 # directory, simply type:
@@ -182,8 +179,7 @@ src.initialize("heart.vtk")
 # and so on). For example, you can load an XML file (with extension .vti,
 # .vtp, .vtr, .vts, .vtu, etc) using VTKXML!FileReader method.
 # 
-# Add the source to your MayaVi2 class
-# ------------------------------------
+# ### Add the source to your MayaVi2 class
 # 
 # Then, once your data are loaded using one of the two methods above, add
 # the source with the add\_source() method in the body of the class
@@ -200,19 +196,19 @@ script.add_source(src)
 # presented now.
 # 
 # Basic Modules
-# =============
+# -------------
 # 
 # See the [:Cookbook/MayaVi/ScriptingMayavi2/BasicModules: Basic Modules]
 # wiki page.
 # 
 # Main Modules
-# ============
+# ------------
 # 
 # See the [:Cookbook/MayaVi/ScriptingMayavi2/MainModules: Main Modules]
 # wiki page.
 # 
 # Filters
-# =======
+# -------
 # 
 # See the [:Cookbook/MayaVi/ScriptingMayavi2/Filters: Filters] wiki page.
 # 

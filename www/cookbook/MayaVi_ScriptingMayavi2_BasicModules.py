@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Scripting Mayavi 2: basic modules
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # These modules are called "basic" because they are general and
 # independant to all kind of data.
@@ -29,7 +30,7 @@ module.actor.property.color = fg_color
 # fact, must) be different from those in the pictures presented here.
 # 
 # Outline module
-# ==============
+# --------------
 # 
 # Nothing special for this very simple module.
 # 
@@ -57,7 +58,7 @@ o.actor.property.color = fg_color
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)BasicModules_attachments/basic_outline.png
 # 
 # Axes module
-# ===========
+# -----------
 # 
 # For axis, you can set several parameters:
 # 
@@ -98,7 +99,7 @@ a.axes.axis_label_text_property.color = fg_color     # in case we want to displa
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)BasicModules_attachments/basic_axes.png
 # 
 # OrientationAxes module
-# ======================
+# ----------------------
 # 
 # !OrientationAxes module will display a little trihedron in the corner of
 # the render window, showing the orientation of the three axes, Ox, Oy,
@@ -130,7 +131,7 @@ oa.text_property.color = fg_color
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)BasicModules_attachments/basic_orientationaxes.png
 # 
 # Text module
-# ===========
+# -----------
 # 
 # You can use this module to display a title for your rendering window.
 # 
@@ -173,7 +174,7 @@ t.y_position = 1-height
 # "vector" color bar. It depends of the data you have in your file.
 # 
 # Setting up color bar
-# ====================
+# --------------------
 # 
 # Strictly speaking, the color bar is not a module, i.e. you don't need to
 # add it with an add\_module() command: you have to associate the
@@ -210,7 +211,7 @@ mmsclut.data_name = "My Label"
 # setting up the scene.
 # 
 # Setting up the scene
-# ====================
+# --------------------
 # 
 # By "setting up the scene", you have to read "how the scene will be
 # seen": for example, setting the color background and the point of view

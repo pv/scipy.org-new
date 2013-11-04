@@ -1,9 +1,10 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Scripting Mayavi 2: main modules
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # Here's the real stuff ;-)
 # 
@@ -20,7 +21,7 @@
 # !ModuleManager.
 # 
 # ImagePlaneWidget/ScalarCutPlane/SliceUnstructuredGrid module
-# ============================================================
+# ------------------------------------------------------------
 # 
 # The simpliest (and easiest, but not the most impressive ;-) ) way to
 # display 3D data is doubtless to slice it on some planes, normal to Ox,
@@ -234,7 +235,7 @@ sug.module_manager.scalar_lut_manager.data_range = [0, 1]
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)MainModules_attachments/module_sug.png
 # 
 # GridPlane/StructuredGridOutline module
-# ======================================
+# --------------------------------------
 # 
 # Using !GridPlane module cuts also your grid, but quite differently from
 # !ScalarCutPlane module. You can't get normal plane only along Ox, Oy and
@@ -313,7 +314,7 @@ gp.actor.property.opacity = 1
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)MainModules_attachments/module_sgo_gp.png
 # 
 # Surface/IsoSurface module
-# =========================
+# -------------------------
 # 
 # Others modules are Surface and !IsoSurface. These modules work with any
 # data.
@@ -393,7 +394,7 @@ isosurf.module_manager.scalar_lut_manager.data_range = [0, 1]
 # "dynamic" scene ! :-)
 # 
 # Volume module
-# =============
+# -------------
 # 
 # It is still quite experimental for me (you can set a lot of parameters),
 # so this section will be very short ;-)
@@ -437,7 +438,7 @@ v.lut_manager.data_name = ""
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)MainModules_attachments/module_volume.png
 # 
 # Vectors/Glyph/VectorCutPlane/WarpVectorCutPlane module
-# ======================================================
+# ------------------------------------------------------
 # 
 # Until now, we have only dealt with scalar values. You can also display
 # values as vectors. You can use one of the three following modules:
@@ -617,7 +618,7 @@ wvcp.warp_vector.filter.scale_factor = 10
 # ![](files/MayaVi(2f)ScriptingMayavi2(2f)MainModules_attachments/module_warpvcp.png
 # 
 # Streamline module
-# =================
+# -----------------
 # 
 # Another way to display vectors fields is to use the Streamline module.
 # 

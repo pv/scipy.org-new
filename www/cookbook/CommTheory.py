@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Communication theory
+# ======================================================================
+# 
 # These two examples illustrate simple simulation of a digital BPSK
 # modulated communication system where only one sample per symbol is used,
 # and signal is affected only by AWGN noise.

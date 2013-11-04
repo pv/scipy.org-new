@@ -1,7 +1,7 @@
 # <markdowncell>
 
 # Correlated Random Samples
-# -------------------------
+# =========================
 # 
 # ***Note:*** *This cookbook entry shows how to generate random samples
 # from a multivariate normal distribution using tools from SciPy, but in

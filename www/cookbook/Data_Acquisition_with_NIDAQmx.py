@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Data Acquisition with NIDAQmx
+# ======================================================================
+# 
 # These are quick examples of using
 # [ctypes](http://docs.python.org/lib/module-ctypes.html) and numpy to do
 # data acquisition and playback using [National
@@ -22,7 +25,7 @@
 # OK, enough talk, let's see the code!
 # 
 # Analog Acquisition
-# ==================
+# ------------------
 # 
 # <codecell>
 
@@ -86,7 +89,7 @@ raw_input()
 # <markdowncell>
 
 # Analog Generation
-# =================
+# -----------------
 # 
 # <codecell>
 

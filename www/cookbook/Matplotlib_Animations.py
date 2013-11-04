@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: animations
+# ======================================================================
+#
 # ***Note:*** Some of the matplotlib code in this cookbook entry may be
 # deprecated or obsolete. For example, the file **anim.py** mentioned
 # below no longer exists in matplotlib. Examples of animation in
@@ -22,7 +25,7 @@
 # <TableOfContents>
 # 
 # Performance
-# ===========
+# -----------
 # 
 # matplotlib supports 5 different graphical user interfaces (GTK, WX, Qt,
 # Tkinter, FLTK) and for some of those GUIs, there are various ways to
@@ -77,7 +80,7 @@ Backend  Frames/second
 # <markdowncell>
 
 # GUI neutral animation in pylab
-# ==============================
+# ------------------------------
 # 
 # The pylab interface supports animation that does not depend on a
 # specific GUI toolkit. This is not recommended for production use, but is
@@ -157,7 +160,7 @@ for i in range(1,len(C)):
 # column smaller simply use C.ravel().
 # 
 # Using the GUI timers or idle handlers
-# =====================================
+# -------------------------------------
 # 
 # If you are doing production code or anything semi-serious, you are
 # advised to use the GUI event handling specific to your toolkit for
@@ -202,7 +205,7 @@ wx.EVT_IDLE(wx.GetApp(), callback)
 # <markdowncell>
 
 # Animating selected plot elements
-# ================================
+# --------------------------------
 # 
 # One limitation of the methods presented above is that all figure
 # elements are redrawn with every call to draw, but we are only updating a
@@ -273,7 +276,7 @@ p.show()
 # <markdowncell>
 
 # Example: cursoring
-# ==================
+# ------------------
 # 
 # matplotlib 0.83.2 introduced a cursor class which can utilize these blit
 # methods for no lag cursoring. The class takes a argument in the
@@ -301,13 +304,12 @@ pylab.show()
 # <markdowncell>
 
 # The 'blit' animation methods
-# ============================
+# ----------------------------
 # 
 # As noted above, only the GTKAgg supports the methods above to to the
 # animations of selected actors. The following are needed
 # 
-# Figure canvas methods
-# ---------------------
+# ### Figure canvas methods
 # 
 # `* `` - copy the region in ax.bbox into a pixel buffer and return it in an object type of your choosing.  bbox is a matplotlib BBox instance from the `[`transforms`
 # `module`](http://matplotlib.sf.net/transforms.html)`. `` is not used by the matplotlib frontend, but it stores it and passes it back to the backend in the `` method. You will probably want to store not only the pixel buffer but the rectangular region of the canvas from whence it came in the background object.`

@@ -1,12 +1,10 @@
 # <markdowncell>
 
-# Table of Contents
-# =================
-# 
-# <TableOfContents>
+# C extensions
+# ======================================================================
 # 
 # Skeleton
-# ========
+# --------
 # 
 # \`extmodule.h\`:
 # 
@@ -90,7 +88,7 @@ PyMODINIT_FUNC init_extmodule() {
 # <markdowncell>
 
 # Debugging C Extensions on Windows
-# =================================
+# ---------------------------------
 # 
 # Debugging C extensions on Windows can be tricky. If you compile your
 # extension code in debug mode, you have to link against the debug version
@@ -125,7 +123,7 @@ extmodule.obj : error LNK2019: unresolved external symbol __imp__Py_InitModule4T
 # symbols that are understood by the Visual Studio debugger.
 # 
 # Valgrind
-# ========
+# --------
 # 
 # To develop a stable extension module, it is essential that you check the
 # memory allocation and memory accesses done by your C code. On Linux, you
@@ -167,7 +165,7 @@ valgrind \
 # test\_extmodule.py\`.
 # 
 # Documentation
-# =============
+# -------------
 # 
 # `* `[`Extending` `and` `Embedding` `the` `Python`
 # `Interpreter`](http://docs.python.org/ext/ext.html)` (read this first)`\
@@ -178,14 +176,14 @@ valgrind \
 # `* Chapter 14 deals with extending !NumPy (make sure you have the edition dated March 15, 2006 or later)`
 # 
 # Examples
-# ========
+# --------
 # 
 # `* `[`ndimage` `in` `the` `SciPy` `SVN`
 # `repository`](http://projects.scipy.org/scipy/scipy/browser/trunk/Lib/ndimage)\
 # `* [:Cookbook/C_Extensions/NumPy_arrays:NumPy arrays] (collection of small examples)`
 # 
 # Mailing List Threads
-# ====================
+# --------------------
 # 
 # `* `[`Freeing` `memory` `allocated` `in`
 # `C`](http://thread.gmane.org/gmane.comp.python.numeric.general/5206/focus=5206)\

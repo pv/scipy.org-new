@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: gridding irregularly spaced data
+# ======================================================================
+#
 # A commonly asked question on the matplotlib mailing lists is "how do I
 # make a contour plot of my irregularly spaced data?". The answer is,
 # first you interpolate it to a regular grid. As of version 0.98.3,

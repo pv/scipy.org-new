@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: using matplotlib in a CGI script
+# ======================================================================
+#
 # Trying to use matplotlib in a python CGI script naïvely will most likely
 # result in the following error:
 # 

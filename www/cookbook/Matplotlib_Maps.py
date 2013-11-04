@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: maps
+# ======================================================================
+#
 # Plotting data on map projections is easy with the basemap toolkit.
 # Toolkits are collections of application-specific functions that extend
 # matplotlib.

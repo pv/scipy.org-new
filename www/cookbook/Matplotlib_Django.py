@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: django
+# ======================================================================
+#
 # 1.  1.  Please edit system and help pages ONLY in the moinmaster wiki!
 #         For more
 #     2.  information, please see MoinMaster:MoinPagesEditorGroup.

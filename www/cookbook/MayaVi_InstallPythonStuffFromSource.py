@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Mayavi: Install python stuff from source
+# ======================================================================
+#
 # Following <http://www.enthought.com/enthought/wiki/GrabbingAndBuilding>,
 # you have to build/install VTK 5.0 and a few python extensions from
 # sources.

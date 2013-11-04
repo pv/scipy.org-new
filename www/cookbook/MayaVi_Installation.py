@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# <TableOfContents>
+# Mayavi: installation
+# ======================================================================
 # 
 # !MayaVi2 and TVTK are part of the [enthought tool
 # suite](http://code.enthought.com).

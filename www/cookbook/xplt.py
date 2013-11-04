@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# xplt
+# ====
+#
 # This shows a simple example of how to create a quick 3-d surface
 # visualization using xplt.
 # 

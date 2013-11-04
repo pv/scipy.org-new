@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# accumarray like function
+# ======================================================================
+# 
 # accum, a function like MATLAB's accumarray
-# ==========================================
+# ------------------------------------------
 # 
 # NumPy doesn't include a function that is equivalent to MATLAB's
 # \`accumarray\` function. The following function, \`accum\`, is close.
@@ -124,7 +127,7 @@ def accum(accmap, a, func=None, size=None, fill_value=0, dtype=None):
 # <markdowncell>
 
 # Examples
-# ========
+# --------
 # 
 # A basic example--sum the diagonals (with wrapping) of a 3 by 3 array:
 # 

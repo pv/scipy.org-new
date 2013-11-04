@@ -1,10 +1,11 @@
 # <markdowncell>
 
+# ======================================================================
 # Data Frames
-# ===========
+# ======================================================================
 # 
-# The <![](files/DataFrame_attachments/DataFrame.py> class, posted by Andrew Straw on the
-)# scipy-user mailing
+# The <![](files/DataFrame_attachments/DataFrame.py> class, posted by Andrew Straw on the)
+# scipy-user mailing
 # list[<http://thread.gmane.org/gmane.comp.python.scientific.user/6860>,
 # original link], is an extremely useful tool for using alphanumerical
 # tabular data, as often found in databases. Some data which might be
@@ -20,8 +21,8 @@
 # Example Usage
 # -------------
 # 
-# A sample file CSV file from Access2000 is in <![](files/DataFrame_attachments/CSVSample.csv>
-)# . We first import the module:
+# A sample file CSV file from Access2000 is in <![](files/DataFrame_attachments/CSVSample.csv>)
+# . We first import the module:
 # 
 # <codecell>
 

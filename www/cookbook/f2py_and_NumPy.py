@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# f2py and numpy
+# ======================================================================
+#
 # Wrapping C codes using f2py
-# ===========================
+# ---------------------------
 # 
 # While initially f2py was developed for wrapping Fortran codes for
 # Python, it can be easily used for wrapping C codes as well. Signature

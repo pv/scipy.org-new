@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# 1.  format wiki
+# LAS reader
+# ======================================================================
 # 
 # This cookbook example contains a module that implements a reader for a
 # LAS (Log ASCII Standard) well log file (LAS 2.0). See the [Canadian Well

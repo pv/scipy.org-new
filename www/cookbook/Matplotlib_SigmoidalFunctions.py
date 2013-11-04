@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: sigmoidal functions
+# ======================================================================
+#
 # matplotlib's approach to plotting functions requires you to compute the
 # x and y vertices of the curves you want to plot and then pass it off to
 # plot. Eg for a normal pdf, matplotlib.mlab provides such a function:

@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Matplotlib: show colormaps
+# ======================================================================
+#
 # Show Matplotlib colormaps
 # 
 # <codecell>

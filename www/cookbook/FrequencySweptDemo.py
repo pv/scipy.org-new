@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Frequency swept signals
+# ======================================================================
+#
 # This page demonstrates two functions in scipy.signal for generating
 # frequency-swept signals: \`chirp\` and \`sweep\_poly\`.
 # 

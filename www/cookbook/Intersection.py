@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Function intersections
+# ======================================================================
+#
 # Find the points at which two given functions intersect
 # ------------------------------------------------------
 # 

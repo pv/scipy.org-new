@@ -1,5 +1,8 @@
 # <markdowncell>
 
+# Linear classification
+# ======================================================================
+#
 # Fisher's Linear Discriminant
 # ----------------------------
 # 

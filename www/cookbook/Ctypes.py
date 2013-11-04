@@ -1,12 +1,10 @@
 # <markdowncell>
 
-# Table of Contents
-# =================
-# 
-# <TableOfContents>
+# Ctypes
+# ======================================================================
 # 
 # Introduction
-# ============
+# ------------
 # 
 # [ctypes](http://starship.python.net/crew/theller/ctypes/) is an advanced
 # Foreign Function Interface package for Python 2.3 and higher. It is
@@ -29,7 +27,7 @@
 # [Cython](http://wiki.cython.org/tutorials/numpy), ["Weave"], etc
 # 
 # Getting Started with ctypes
-# ===========================
+# ---------------------------
 # 
 # The [ctypes
 # tutorial](http://starship.python.net/crew/theller/ctypes/tutorial.html)
@@ -48,8 +46,7 @@
 # [OOF2](http://www.ctcms.nist.gov/oof/oof2/index.html). This should
 # probably be included in numpy.distutils at some point.
 # 
-# Nmake Makefile (Windows)
-# ------------------------
+# ### Nmake Makefile (Windows)
 # 
 # Run nmake inside the Visual Studio Command Prompt to build with the
 # following file.
@@ -92,8 +89,7 @@ clean:
 
 # <markdowncell>
 
-# SConstruct (GCC)
-# ----------------
+# ### SConstruct (GCC)
 # 
 # You can use the following file with [SCons](http://www.scons.org) to
 # build a shared library.
@@ -107,8 +103,7 @@ env.SharedLibrary('foo', ['foo.cpp'])
 
 # <markdowncell>
 
-# foo.cpp
-# -------
+# ### foo.cpp
 # 
 # <codecell>
 
@@ -157,8 +152,7 @@ extern FOO_API int bar(double* data, int len) {
 # with C linkage on top of a bunch of C++ classes so that you can use them
 # with ctypes. Alternatively, you might prefer to write C code.
 # 
-# foo.py
-# ------
+# ### foo.py
 # 
 # <codecell>
 
@@ -176,7 +170,7 @@ n = bar(x)
 # <markdowncell>
 
 # NumPy arrays' ctypes property
-# =============================
+# -----------------------------
 # 
 # A ctypes property was recently added to NumPy arrays:
 # 
@@ -214,7 +208,7 @@ Out[27]: [96, 32, 8]
 # function on all the input arrays.
 # 
 # NumPy's ndpointer with ctypes argtypes
-# ======================================
+# --------------------------------------
 # 
 # Starting with ctypes 0.9.9.9, any class implementing the from\_param
 # method can be used in the argtypes list of a function. Before ctypes
@@ -245,7 +239,7 @@ func.argtypes = [arg1,arg2,arg3,arg4,arg5]
 # ndpointer](http://thread.gmane.org/gmane.comp.python.numeric.general/7418/focus=7418).
 # 
 # Dynamic allocation through callbacks
-# ====================================
+# ------------------------------------
 # 
 # ctypes supports the idea of
 # [callbacks](http://docs.python.org/lib/ctypes-callback-functions.html),
@@ -467,7 +461,7 @@ void func(..., allocator_t allocator) {
 # you will have to do something a bit smarter.
 # 
 # More useful code frags
-# ======================
+# ----------------------
 # 
 # Suppose you have a C function like the following, which operates on a
 # pointer-to-pointers data structure.
@@ -500,7 +494,7 @@ data = (f4ptr*len(x))(*[row.ctypes.data_as(f4ptr) for row in x])
 # to contain a pointer to every row of the array.
 # 
 # Heterogeneous Types Example
-# ===========================
+# ---------------------------
 # 
 # Here's a simple example when using heterogeneous dtypes (record arrays).
 # 
@@ -572,7 +566,7 @@ if __name__=='__main__':
 # <markdowncell>
 
 # Fibonacci example (using NumPy arrays, C and Scons)
-# ===================================================
+# ---------------------------------------------------
 # 
 # The following was tested and works on Windows (using MinGW) and
 # GNU/Linux 32-bit OSs (last tested 13-08-2009). Copy all three files to
@@ -756,7 +750,7 @@ array([  3, 144,   1,   5])
 # etc.
 # 
 # Pertinent Mailing List Threads
-# ==============================
+# ------------------------------
 # 
 # Some useful threads on the ctypes-users mailing list:
 # 
@@ -778,7 +772,7 @@ array([  3, 144,   1,   5])
 # Thomas Heller's answers are particularly insightful.
 # 
 # Documentation
-# =============
+# -------------
 # 
 # `* `[`ctypes`
 # `tutorial`](http://starship.python.net/crew/theller/ctypes/tutorial.html)\

@@ -1,7 +1,10 @@
 # <markdowncell>
 
+# A numerical agnostic pyrex class
+# ======================================================================
+# 
 # Overview
-# ========
+# --------
 # 
 # Here is presented *!NumInd* (Numerical Independent Extension), an
 # example of a class written in
@@ -21,7 +24,7 @@
 # `* numarray (>=1.5.1)`
 # 
 # NumInd: a Numerical Independent Pyrex-based extension
-# =====================================================
+# -----------------------------------------------------
 # 
 # The !NumInd class shown below takes a Numeric/numarray/!NumPy object and
 # creates another object that can be accessed in an uniform way from both
@@ -223,7 +226,7 @@ cdef class NumInd:
 # <markdowncell>
 
 # An example of use
-# =================
+# -----------------
 # 
 # In order to get an idea of what the above extension offers, try to run
 # this script against the !NumInd extension:
@@ -260,10 +263,10 @@ for obj in [nu, na, np]:
 
 # <markdowncell>
 
-# You can check the output here [1](![](files/A_Numerical_Agnostic_Pyrex_Class_attachments/test_output.txt).
-)# 
+# You can check the output here [1](![](files/A_Numerical_Agnostic_Pyrex_Class_attachments/test_output.txt).)
+#
 # See also
-# ========
+# --------
 # 
 # `* ["Cookbook/Pyrex_and_NumPy"]`\
 # `* ["Cookbook/ArrayStruct_and_Pyrex"] (The inspiring recipe)`

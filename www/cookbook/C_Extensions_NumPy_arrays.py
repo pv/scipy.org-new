@@ -1,6 +1,7 @@
 # <markdowncell>
 
 # C Extensions for Using NumPy Arrays
+# ======================================================================
 # 
 # I've written several C extensions that handle NumPy arrays. They are
 # simple, but they seem to work well. They will show you how to pass
@@ -32,16 +33,15 @@
 # here as version 1. I (DavidLinke) have converted this to wiki-markup:*
 # 
 # C Extensions to NumPy and Python
-# ================================
+# --------------------------------
 # 
 # By Lou Pecora - 2006-12-07 (Draft version 0.1)
 # 
 # <TableOfContents>
 # 
-# Overview
-# --------
+# ### Overview
 # 
-# ### Introduction– a little background
+# #### Introduction– a little background
 # 
 # In my use of Python I came across a typical problem: I needed to speed
 # up particular parts of my code. I am not a Python guru or any kind of
@@ -107,7 +107,7 @@
 # manipulate the data and they also have a lot of repetition. The utility
 # functions are also very short and simple so nothing to fear there.
 # 
-# ### General Scheme for NumPy Extensions
+# #### General Scheme for NumPy Extensions
 # 
 # This will be covered in detail below, but first I wanted to give you a
 # sense of how each extension is organized.
@@ -139,7 +139,7 @@
 # 
 # `* Finally, you return to the Python calling function, by returning a Python value or NumPy array. I have C extensions which show examples of both.`
 # 
-# ### Python Wrapper Functions
+# #### Python Wrapper Functions
 # 
 # It is best to call the C extensions by calling a Python function that
 # then calls the extension. This is called a Python wrapper function. It
@@ -149,15 +149,14 @@
 # C extension and other C functions for that big calculation. It may seem
 # like an unnecessary extra step, but it's worth it.
 # 
-# The Code
-# --------
+# ### The Code
 # 
 # In this section I refer to the code in the source files C\_arraytest.h,
 # C\_arraytest.c, C\_arraytest.py, and C\_arraytest.mak. You should keep
 # those files handy (probably printed out) so you can follow the
 # explanations of the code below.
 # 
-# ### The C Code – one detailed example with utilities
+# #### The C Code – one detailed example with utilities
 # 
 # First, I will use the example of code from C\_arraytest.h,
 # C\_arraytest.c for the routine called matsq. This function takes a
@@ -181,7 +180,7 @@
 # 
 # Now, lets look at the source code in smaller chunks.
 # 
-# #### Headers
+# ##### Headers
 # 
 # You must include the following headers with Python.h **always** the
 # first header included.
@@ -202,7 +201,7 @@
 # passes arguments. The second args is a pointer to a Python tuple that
 # contains all of the arguments (B,i,x) of the function.
 # 
-# #### Method definitions
+# ##### Method definitions
 # 
 # This sets up a table of function names that will be the interface from
 # your Python code to your C extension. The name of the C extension module
@@ -219,7 +218,7 @@
 # have not tried them out. The table should always end with {NULL, NULL}
 # which is just a "marker" to note the end of the table.
 # 
-# #### Initializations
+# ##### Initializations
 # 
 # These functions tell the Python interpreter what to call when the module
 # is loaded. Note the name of the module (\`\_C\_arraytest\`) must come
@@ -228,7 +227,7 @@
 # The order is important and you must call these two initialization
 # functions first.
 # 
-# #### The matsqfunction code
+# ##### The matsqfunction code
 # 
 # Now here is the actual function that you will call from Python code. I
 # will split it up and explain each section.
@@ -328,7 +327,7 @@
 # extensions. For more info see [Guido´s
 # tutorial](http://docs.python.org/ext/ext.html).
 # 
-# #### The utility functions
+# ##### The utility functions
 # 
 # Here are some quick descriptions of the matrix utility functions. They
 # are pretty much self-explanatory. The vector and integer array utility
@@ -433,7 +432,7 @@
 # Here's my modified Makefile which compiles this code under Linux (save
 # it as Makefile in the same directory, and then run 'make' --PaulIvanov
 # 
-# ### The Python Wrapper Code
+# #### The Python Wrapper Code
 # 
 # Here as in the C code I will only show detailed description of one
 # wrapper function and its use. There is so much repetition that the other
@@ -473,8 +472,7 @@
 # The output of all the test functions is in the file \`C\_arraytest\`
 # output.
 # 
-# Summary
-# -------
+# ### Summary
 # 
 # This is the first draft explaining the C extensions I wrote (with help).
 # If you have comments on the code, mistakes, etc. Please post them on the
@@ -490,7 +488,7 @@
 # worth the effort.
 # 
 # Comments?!
-# ==========
+# ----------
 # 
 # Note that this line, while in the header file above, is missing from the
 # .h in the tar-ball.

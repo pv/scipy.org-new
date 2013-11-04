@@ -1,7 +1,5 @@
 # <markdowncell>
 
-# <TableOfContents>
-# 
 # Finding the minimum point in the convex hull of a finite set of points
 # ======================================================================
 # 
@@ -13,7 +11,7 @@
 # epsilon. The aim of the change is to avoid infinite loops.
 # 
 # Code
-# ====
+# ----
 # 
 # <codecell>
 
@@ -81,7 +79,7 @@ if __name__ == '__main__':
 # <markdowncell>
 
 # References
-# ==========
+# ----------
 # 
 # `1. `[`Finding` `the` `nearest` `point` `in` `A`
 # `polytope`](http://www.springerlink.com/content/hw0l2n1271260604/)\

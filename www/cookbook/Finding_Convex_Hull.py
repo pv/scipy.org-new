@@ -1,7 +1,5 @@
 # <markdowncell>
 
-# <TableOfContents>
-# 
 # Finding the Convex Hull of a 2-D Dataset
 # ========================================
 # 

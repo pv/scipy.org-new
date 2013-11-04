@@ -1,6 +1,7 @@
 # <markdowncell>
 
-# 1.  format wiki
+# Coupled spring-mass system
+# ======================================================================
 # 
 # This cookbook example shows how to solve a system of differential
 # equations. (Other examples include the

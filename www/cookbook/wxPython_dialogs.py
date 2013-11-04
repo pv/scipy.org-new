@@ -1,7 +1,7 @@
 # <markdowncell>
 
-# Overview
-# ========
+# wxPython dialogs
+# ================
 # 
 # Something I enjoy in matlab is the ease in which simple file selector
 # dialogs, and status bars can be made. Now that I use nothing but scipy,
@@ -13,7 +13,7 @@
 # initially got started with wxPython).
 # 
 # File Selector Dialog
-# ====================
+# --------------------
 # 
 # I often write simple translation scripts that convert some data, into
 # another form. I like to use these for a series of data, and share them
@@ -60,13 +60,3 @@ filename = wx.FileSelector(default_path=os.getcwd())
 
 # ...
 app.Destroy()
-
-# <markdowncell>
-
-# To be continued . . .
-# 
-# Status Bar
-# ==========
-# 
-# Coming soon . . .
-# 

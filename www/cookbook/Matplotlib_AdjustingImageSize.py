@@ -1,13 +1,16 @@
 # <markdowncell>
 
+# ======================================================================
+# Matplotlib: adjusting image size
+# ======================================================================
+#
 # This is a small demo file that helps teach how to adjust figure sizes
 # for matplotlib
 # 
 # First a little introduction
-# ===========================
+# ---------------------------
 # 
-# There are three parameters define an image size (this is not MPL specific):
-# ---------------------------------------------------------------------------
+# ### There are three parameters define an image size (this is not MPL specific):
 # 
 # `* Size in length units (inches, cm, pt, etc): e.g. 5"x7"`\
 # `* Size in pixels: e.g. 800x600 pixels`\
@@ -19,8 +22,7 @@
 # printed, or saved to PS, EPS or PDF (all designed to support printing),
 # then the Size or dpi is used to determine how to scale the image.
 # 
-# Now I'm getting into how MPL works
-# ----------------------------------
+# ### Now I'm getting into how MPL works
 # 
 # `. 1) The size of a figure is defined in length units (inches), and can be set by `\
 # `. 2) The layout of the figure is defined in 'figure units' so that as the figure size is changed, the layout (eg axes positions) will update.`\
@@ -29,7 +31,7 @@
 # `The trick here is that when printing, it's natural to think in terms of inches, but when creating an image (for a web page, for instance), it is natural to think in terms of pixel size. However, as of 0.84, pixel size can only be set directly in the GTK* back-ends, with the canvas.resize(w,h) method. (remember that you can only set two of the three size parameters, the third must be calculated from the other two).`
 # 
 # Another trick
-# =============
+# -------------
 # 
 # Figure.savefig() overrides the dpi setting in figure, and uses a default
 # (which on my system at least is 100 dpi). If you want to overide it, you
@@ -95,7 +97,7 @@ F.savefig("test3.png", dpi = (200)) # change the dpi
 # <markdowncell>
 
 # Putting more than one image in a figure
-# =======================================
+# ---------------------------------------
 # 
 # Suppose you have two images: 100x100 and 100x50 that you want to display
 # in a figure with a buffer of 20 pixels (relative to image pixels)
