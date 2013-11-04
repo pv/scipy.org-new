@@ -97,8 +97,9 @@ def generate(fn):
         post = ("Attachments\n"
                 "-----------\n\n")
         for fn in attachments:
-            post += "- :download:`%s <%s>`" % (os.path.basename(fn),
-                                               os.path.relpath(fn, 'cookbook'))
+            post += "- :download:`%s <%s>`\n" % (
+                os.path.basename(fn),
+                os.path.relpath(fn, 'cookbook'))
     else:
         post = ""
 
