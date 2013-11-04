@@ -25,7 +25,8 @@ def generate(fn):
     rst_fn = os.path.splitext(py_fn)[0] + '.rst'
 
     with open(py_fn, 'rb') as py_f, open(ipynb_fn, 'wb') as ipynb_f:
-        nb = nbformat.read(py_f, 'py')
+        py = py_f.read().decode('utf-8')
+        nb = nbformat.reads(py, 'py')
         nbformat.write(nb, ipynb_f, 'ipynb')
     ret = subprocess.call(['ipython', 'nbconvert', '--to', 'rst', ipynb_fn],
                           cwd=os.path.dirname(ipynb_fn))
