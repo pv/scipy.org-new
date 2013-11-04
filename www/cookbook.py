@@ -18,10 +18,8 @@ def main():
     p = argparse.ArgumentParser(usage=__doc__.lstrip())
     args = p.parse_args()
 
-    if not os.path.isdir('cookbook/files'):
-        os.makedirs('cookbook/files')
-    if not os.path.islink('cookbook/files/attachments'):
-        os.symlink('../source/attachments', 'cookbook/files/attachments')
+    if not os.path.islink('cookbook/files'):
+        os.symlink('source/attachments', 'cookbook/files')
 
     files = list(sorted(glob.glob('cookbook/source/*.py')
                         + glob.glob('cookbook/source/*.ipynb')))
@@ -85,7 +83,7 @@ def generate(fn):
 
     attachments = []
 
-    attach_dir = os.path.join('cookbook/files/attachments/%s' % bn)
+    attach_dir = os.path.join('cookbook/files/%s' % bn)
     if os.path.isdir(attach_dir):
         attachments = []
         for fn in sorted(os.listdir(attach_dir)):
