@@ -18,6 +18,11 @@ def main():
     p = argparse.ArgumentParser(usage=__doc__.lstrip())
     args = p.parse_args()
 
+    if not os.path.isdir('cookbook/files'):
+        os.makedirs('cookbook/files')
+    if not os.path.islink('cookbook/files/attachments'):
+        os.symlink('../source/attachments', 'cookbook/files/attachments')
+
     files = list(sorted(glob.glob('cookbook/source/*.py')
                         + glob.glob('cookbook/source/*.ipynb')))
     for fn in files:
@@ -78,10 +83,29 @@ def generate(fn):
     pre = COOKBOOK_PRE % dict(py=os.path.basename(py_fn),
                               ipynb=os.path.basename(ipynb_fn))
 
+    attachments = []
+
+    attach_dir = os.path.join('cookbook/files/attachments/%s' % bn)
+    if os.path.isdir(attach_dir):
+        attachments = []
+        for fn in sorted(os.listdir(attach_dir)):
+            fn = os.path.join(attach_dir, fn)
+            if os.path.isfile(fn):
+                attachments.append(fn)
+
+    if attachments:
+        post = ("Attachments\n"
+                "-----------\n\n")
+        for fn in attachments:
+            post += "- :download:`%s <%s>`" % (os.path.basename(fn),
+                                               os.path.relpath(fn, 'cookbook'))
+    else:
+        post = ""
+
     with open(rst_fn, 'rb') as f:
         txt = f.read()
 
-    txt = pre + "\n\n" + txt
+    txt = pre + "\n\n" + txt + "\n\n" + post
 
     with open(rst_fn, 'wb') as f:
         f.write(txt)

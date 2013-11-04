@@ -7,4 +7,5 @@ _build/
 /www/cookbook/*.ipynb
 /www/cookbook/*_files
 /www/cookbook/*.py
+/www/cookbook/files
 /www/cookbook/*.rst
