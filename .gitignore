@@ -4,3 +4,6 @@ _build/
 *.pyc
 *~
 *.bak
+/www/cookbook/*.ipynb
+/www/cookbook/*_files
+/www/cookbook/*.rst
