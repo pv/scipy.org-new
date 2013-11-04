@@ -6,4 +6,5 @@ _build/
 *.bak
 /www/cookbook/*.ipynb
 /www/cookbook/*_files
+/www/cookbook/*.py
 /www/cookbook/*.rst

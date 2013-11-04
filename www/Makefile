@@ -24,7 +24,7 @@ help:
 	@echo "  linkcheck              to check if external links work"
 
 clean:
-	-rm -rf _build/* cookbook/*.rst cookbook/*.ipynb cookbook/*_files
+	-rm -rf _build/* cookbook/*.py cookbook/*.rst cookbook/*.ipynb cookbook/*_files
 
 upload: html
 	# SSH must be correctly configured for this to work.

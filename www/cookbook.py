@@ -8,15 +8,18 @@ Generate RST and IPYNB source files for IPython cookbook
 import os
 import glob
 import argparse
-import IPython.nbformat.current as nbformat
 import subprocess
+import shutil
+
+import IPython.nbformat.current as nbformat
 
 
 def main():
     p = argparse.ArgumentParser(usage=__doc__.lstrip())
     args = p.parse_args()
 
-    files = list(sorted(glob.glob('cookbook/*.py')))
+    files = list(sorted(glob.glob('cookbook/source/*.py')
+                        + glob.glob('cookbook/source/*.ipynb')))
     for fn in files:
         generate(fn)
 
@@ -32,21 +35,31 @@ def main():
 
 def generate(fn):
     print("\nConverting %s..." % os.path.basename(fn))
-    py_fn = os.path.abspath(fn)
-    ipynb_fn = os.path.splitext(py_fn)[0] + '.ipynb'
-    rst_fn = os.path.splitext(py_fn)[0] + '.rst'
+
+    bn = os.path.splitext(os.path.basename(fn))[0]
+
+    py_fn = os.path.join('cookbook', bn + '.py')
+    ipynb_fn = os.path.join('cookbook', bn + '.ipynb')
+    rst_fn = os.path.join('cookbook', bn + '.rst')
 
     if os.path.isfile(rst_fn):
         if os.stat(rst_fn).st_mtime > os.stat(py_fn).st_mtime:
             print("Already up-to-date.")
             return
 
-    with open(py_fn, 'rb') as py_f, open(ipynb_fn, 'wb') as ipynb_f:
-        py = py_f.read().decode('utf-8')
-        nb = nbformat.reads(py, 'py')
-        nbformat.write(nb, ipynb_f, 'ipynb')
+    if fn.endswith('.py'):
+        shutil.copyfile(fn, py_fn)
+        with open(py_fn, 'rb') as py_f, open(ipynb_fn, 'wb') as ipynb_f:
+            py = py_f.read().decode('utf-8')
+            nb = nbformat.reads(py, 'py')
+            nbformat.write(nb, ipynb_f, 'ipynb')
+    elif fn.endswith('.ipynb'):
+        shutil.copyfile(fn, ipynb_fn)
+        with open(ipynb_fn, 'rb') as ipynb_f, open(py_fn, 'wb') as py_f:
+            nb = nbformat.read(ipynb_f, 'ipynb')
+            nbformat.write(nb, py_f, 'py')
 
-    ret = subprocess.call(['ipython', 'nbconvert', '--to', 'rst', ipynb_fn],
+    ret = subprocess.call(['ipython', 'nbconvert', '--to', 'rst', os.path.basename(ipynb_fn)],
                           cwd=os.path.dirname(ipynb_fn))
     if ret != 0:
         raise RuntimeError("RST conversion failed!")
