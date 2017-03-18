@@ -13,24 +13,28 @@ ALLSPHINXOPTS   = -d _build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 .PHONY: help clean html linkcheck
 
-USERNAME=tkluyver
-
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  upload USERNAME=user   to upload the generated pages to new.scipy.org"
-	@echo "  html                   to make standalone HTML files"
-	@echo "  linkcheck              to check if external links work"
+	@echo "  make deploy                 to deploy the generated pages"
+	@echo "  make html                   to make standalone HTML files"
+	@echo "  make linkcheck              to check if external links work"
 
 clean:
 	-rm -rf _build/*
 
-upload: html
-	# SSH must be correctly configured for this to work.
-	cp .htaccess _build/html/
-	chmod a+rX -R _build/html/
-	-rsync -az --delete-after --exclude '.git' _build/html/ \
-	    $(USERNAME)@new.scipy.org:/srv/scipy_org
-	ssh $(USERNAME)@new.scipy.org /srv/bin/fixperm-scipy_org.sh
+deploy: html
+	rm -rf build/deploy
+	git clone git@github.com:pv/scipy.org-html build/deploy
+	git -C build/deploy checkout --orphan tmp
+	-git -C build/deploy branch -D master
+	git -C build/deploy checkout --orphan master
+	git -C build/deploy reset --hard
+	git -C build/deploy clean -f -d -x
+	rsync -a _build/html/ build/deploy/
+	touch build/deploy/.nojekyll
+	git -C build/deploy add .
+	git -C build/deploy commit -m "Doc rebuild"
+	git -C build/deploy push -f origin master
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) _build/html
