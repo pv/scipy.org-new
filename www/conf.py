@@ -10,7 +10,8 @@ sys.path.append(os.path.abspath('sphinxext'))
 extensions = ['sphinx.ext.intersphinx',
               'sphinx.ext.pngmath',
               'ipython_console_highlighting',
-              'sphinx.ext.ifconfig']
+              'sphinx.ext.ifconfig',
+              'redirects']
 
 # Matplotlib sphinx extensions
 # ----------------------------
