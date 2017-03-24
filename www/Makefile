@@ -1,6 +1,9 @@
 # Makefile for Sphinx documentation
 #
 
+DEPLOY_REPO   = git@github.com:pv/scipy.org-html
+DEPLOY_BRANCH = master
+
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
@@ -24,17 +27,17 @@ clean:
 
 deploy: html
 	rm -rf build/deploy
-	git clone git@github.com:pv/scipy.org-html build/deploy
+	git clone $(DEPLOY_REPO) build/deploy
 	git -C build/deploy checkout --orphan tmp
-	-git -C build/deploy branch -D master
-	git -C build/deploy checkout --orphan master
+	-git -C build/deploy branch -D $(DEPLOY_BRANCH)
+	git -C build/deploy checkout --orphan $(DEPLOY_BRANCH)
 	git -C build/deploy reset --hard
 	git -C build/deploy clean -f -d -x
 	rsync -a _build/html/ build/deploy/
 	touch build/deploy/.nojekyll
 	git -C build/deploy add .
 	git -C build/deploy commit -m "Doc rebuild"
-	git -C build/deploy push -f origin master
+	git -C build/deploy push -f origin $(DEPLOY_BRANCH)
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) _build/html
